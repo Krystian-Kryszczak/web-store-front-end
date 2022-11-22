@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Store</title>
+    <link rel="stylesheet" href="assets/css/variables.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/b-l.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <!-- Glide.js CDN -->
+    <link rel="stylesheet" href="assets/css/glide.core.css"/> <!-- https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css -->
+    <link rel="stylesheet" href="assets/css/glide.theme.min.css"/> <!-- https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css -->
+    <script src="assets/javascript/glide.js" type="text/javascript"></script> <!-- https://cdn.jsdelivr.net/npm/@glidejs/glide -->
+    <script src="assets/javascript/script.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="h-container">
+        <div class="row align-items-center sbtw">
+          <button class="nav-btn" type="button">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="col h-logo">
+            <a href="/">
+              <img src="assets/images/logo.jpeg" alt="LOGO">
+            </a>
+          </div>
+          <div class="col h-content">
+            <div class="h-row">
+              <div class="h-quick-search">
+                <form action="" method="POST" name="quick_search" class="h-quick-search-box">
+                  <div class="search-container">
+                    <input type="text" name="search" class="form-control quick-search-autocomplete" value="" autocomplete="off" placeholder="Szukaj w ofercie 300 tysięcy produktów"/>
+                    <div class="h-quick-search-dropdown">
+                      <div class="md-top">
+                        <select class="dropdown-native-select form-control" name="elem_id">
+                          <option value="0" selected="selected">Wszystkie działy</option>
+                          <option value="1">Przewody</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary h-quick-search-submit"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="h-controls">
+                <div class="h-control-row">
+                  <a href="#" class="h-control h-clipboard-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-folder h-icon"></i><span>Schowek</span>
+                    </div>
+                  </a>
+                  <a href="#" class="h-control h-user-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-user h-icon"></i><span>Zaloguj się</span>
+                    </div>
+                  </a>
+                  <a href="#" class="h-control h-basket-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-shopping-cart h-icon"></i><span>0,00 zł</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <header class="nav-header">
+        <h3>MENU</h3>
+        <button class="nav-btn" type="button">
+          <span></span><span></span>
+        </button>
+      </header>
+      <div class="colm flex-start nav-content">
+        <ul class="nav-list">
+          <li class="nav-li-c-item">
+            <p class="nav-item">Katrgorie</p>
+            <div class="categoryies hc">
+              <div class="c-list-container">
+                <ul class="c-list">
+                  <li><a href="#" class="c">Aparatura elektryczna</a></li>
+                  <li><a href="#" class="c">Gniazda i łączniki</a></li>
+                  <li><a href="#" class="c">Źródła światła</a></li>
+                  <li><a href="#" class="c">Kable i przewody</a></li>
+                  <li><a href="#" class="c">Elementy prowadzenia kabli</a></li>
+                  <li><a href="#" class="c">Rozdzielnice i obudowy</a></li>
+                  <li><a href="#" class="c">Elektronarzędzia i mierniki</a></li>
+                  <li><a href="#" class="c">Dom i ogród</a></li>
+                  <li><a href="#" class="c">Artykuły biórowe</a></li>
+                  <li><a href="#" class="c">Oprawy oświetleniowe</a></li>
+                  <li><a href="#" class="c">Osprzęt łączeniowy</a></li>
+                  <li><a href="#" class="c">Odzież ochrona i BHP</a></li>
+                  <li><a href="#" class="c">Elektronika użytkowa</a></li>
+                  <li><a href="#" class="c">Wentylacja i ogrzewanie</a></li>
+                  <li><a href="#" class="c">Ochrona odgromowa</a></li>
+                  <li><a href="#" class="c">Domofony i dzwonki</a></li>
+                  <li><a href="#" class="c">Alarmy, domofony, komunikacja</a></li>
+                  <li><a href="#" class="c">Fotowoltaika</a></li>
+                  <li><a href="#" class="c">Pneumatyka</a></li>
+                  <li><a href="#" class="c">Oferty specjalne</a></li>
+                  <li><a href="#" class="c">Inne</a></li>
+                  <li><a href="#" class="c">Nowości</a></li>
+                  <li><a href="#" class="c">IT, GSM</a></li>
+                  <li><a href="#" class="c">Hobby, Zdrowie i Turystyka</a></li>
+                  <li><a href="#" class="c">RTV, AGD</a></li>
+                  <li><a href="#" class="c">Budowa i Remont</a></li>
+                  <li><a href="#" class="c">Pneumatyka</a></li>
+                </ul>
+              </div>
+              <div class="c-more">
+                Więcej
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="nav-item">Producenci</a></li>
+          <li><a href="#" class="nav-item">Promocje</a></li>
+          <li><a href="#" class="nav-item">Nowości</a></li>
+          <li><a href="#" class="nav-item">Outlet</a></li>
+          <li><a href="#" class="nav-item">Porady</a></li>
+          <li><a href="#" class="nav-item">Konfiguratory</a></li>
+          <li><a href="#" class="nav-item">Strefa porad</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="colm jcc m mtbl">
+      <div class="bye-laws">
+        Regulamin sklepu internetowego
+
+REGULAMIN
+
+SKLEPU INTERNETOWEGO
+
+www.tim.pl
+
+I. INFORMACJE OGÓLNE
+
+    Niniejszy dokument (zwany dalej Regulaminem) jest regulaminem, o którym mowa w art. 8 ustawy z dnia 18.07.2002 r. o świadczeniu usług drogą elektroniczną, określającym prawa i obowiązki osób korzystających ze sklepu Internetowego dostępnego pod adresem internetowym www.tim.pl, prowadzonego przez Usługodawcę.
+    Ilekroć w treści Regulaminu nie postanowiono inaczej poszczególne postanowienia Regulaminu odnoszą się zarówno do Usługobiorców korzystających ze Sklepu internetowego za pośrednictwem strony WWW jak i za pośrednictwem Aplikacji mobilnej.
+
+
+
+II. DEFINICJE
+
+    Następującym wyrażeniom użytym w tekście niniejszego Regulaminu zostały przypisane następujące znaczenia:
+
+Aplikacja mobilna: program komputerowy pod nazwą „mTIM” umożliwiający korzystanie ze Sklepu internetowego za pośrednictwem urządzenia mobilnego.
+
+Dni robocze : dni od poniedziałku do piątku z wyłączeniem dni ustawowo wolnych od pracy.
+
+Informacje handlowe – informacje o Towarach wyświetlane w Sklepie internetowym. Informacje handlowe w zakresie ceny oraz dostępności Towaru, na etapie przed dodaniem Towaru do Koszyka i zalogowaniem się do Konta, nie stanowią oferty w rozumieniu Kodeksu cywilnego lecz jedynie zaproszenie do rozpoczęcia negocjacji.
+
+Hasło: zestaw znaków alfanumerycznych konieczny do autoryzacji Usługobiorcy podczas logowania do Konta. Hasło jest określane samodzielnie przez Usługobiorcę podczas rejestracji Konta.
+
+Klauzule – oświadczenia, które Usługobiorca może złożyć dobrowolnie poprzez zaznaczenie tzw. „check-boxów” w ramach formularza dostępnego na stronie Sklepu internetowego na etapie zakładania Konta, których zaznaczenie oznacza zgodę na treść każdego z ww. oświadczeń, tj. zgodę na Regulaminu, OWS oraz treść Polityki prywatności Sklepu internetowego oraz odrębnie zgodę na przesyłanie informacji handlowej drogą elektroniczną w celu marketingu bezpośredniego oraz zgodę na kontakt telefoniczny w celu marketingu bezpośredniego.
+
+Komentarz – opinia Usługobiorcy dotycząca wcześniejszej Opinii lub Komentarza.
+
+Konsument – osoba fizyczna dokonująca z przedsiębiorcą czynności prawnej niezwiązanej bezpośrednio z jej działalnością gospodarczą lub zawodową (art. 221Kodeksu cywilnego).
+
+Konfigurator – elektroniczny formularz udostępniony w Sklepie internetowym, za pomocą którego Usługobiorca po wypełnieniu obowiązkowych pól, otrzymuje listę Towarów spełniających określone parametry
+
+Konto – zespół funkcjonalności Sklepu internetowego oraz zbiór danych podanych przez Usługobiorcę, dostępny po uprzedniej rejestracji. Usługobiorca ma możliwość korzystania z Konta również za pomocą Aplikacji mobilnej.
+
+Formularz Komentarza - elektroniczny formularz udostępniony w Sklepie internetowym, za pomocą którego Usługobiorca dodaje Komentarz.
+
+Formularz Opinii - elektroniczny formularz udostępniony w Sklepie internetowym, za pomocą którego Usługobiorca dodaje Opinie.
+
+Formularz Wizytówki Klienta – elektroniczny formularz udostępniony w Sklepie internetowym, za pomocą którego Usługobiorca może rozszerzyć zakres danych o Usługobiorcy upublicznianych w związku z dodawaniem Opinii, o informacje o prowadzonej prze niego działalności gospodarczej.
+
+Formularz kontaktowy - elektroniczny formularz udostępniony w Sklepie internetowym, za pomocą którego Usługobiorca może wysłać wiadomość do Usługodawcy.
+
+
+
+Formularz zapytania – elektroniczny formularz udostępniony w Sklepie internetowym, za pomocą którego Usługobiorca po wypełnieniu obowiązkowych pól może wysłać prośbę o wycenę
+
+Formularz zamówienia (Koszyk) - elektroniczny formularz udostępniony w Sklepie internetowym, za pomocą którego Usługobiorca precyzuje warunki Umowy Sprzedaży w celu złożenia Zamówienia.
+
+Formularz zamówienia usługi Udostępnianie bazy produktowej -  elektroniczny formularz udostępniony w Sklepie internetowym, w zakładce Udostępnianie bazy produktowej, za pomocą którego Usługobiorca będący Przedsiębiorcą precyzuje warunki umowy o świadczenie usługi Udostępnianie bazy produktowej, w celu złożenia zamówienia na ww. usługę.
+
+Formularz rejestracji – elektroniczny formularz udostępniony w Sklepie internetowym za pomocą którego Usługobiorca zakłada Konto.
+
+Formularz reklamacji - elektroniczny formularz udostępniony w Sklepie internetowym w zakładce Reklamacji i zwroty, za pomocą którego Klient może zawiadomić Usługodawcę o niezgodności w dostawie lub wadzie Towaru,
+
+Formularz zwrotów - elektroniczny formularz udostępniony w Sklepie internetowym w zakładce Reklamacji i zwroty, za pomocą którego Klient może złożyć Usługodawcy oświadczenie  odstąpienia od umowy sprzedaży Towaru lub bębna.
+
+Klient – Klient w rozumieniu OWS Sklepu internetowego,
+
+Login : adres poczty elektronicznej Usługobiorcy używany podczas zakładania Konta i każdoczesnego logowania się do Konta.
+
+Nick – pseudonim, pod którym Usługobiorca może umieszczać Treści.
+
+Opinia - opinia Usługobiorcy dotycząca Towaru.
+
+OWS - Ogólne Warunki Sprzedaży Sklepu internetowego. Stanowiące zbiór warunków stanowiących element każdej Umowy sprzedaży, dostępne na stronie Sklepu internetowego.
+
+Przedsiębiorca – Przedsiębiorca w rozumieniu OWS Sklepu internetowego.
+
+Sklep internetowy – to strona internetowa o adresie www.tim.pl. Dostęp do Sklepu internetowego jest możliwy również za pośrednictwem Aplikacji mobilnej.
+
+Schowek – funkcjonalność Konta umożliwiająca Usługobiorcy stworzenie listy interesujących go Towarów.
+
+Subkonto : zespół funkcjonalności Sklepu internetowego dostępny dla osób upoważnionych przez Usługobiorcę do korzystania z Konta w jego imieniu.
+
+Towar – rzecz ruchoma oferowana do sprzedaży za pośrednictwem Sklepu internetowego.
+
+Treści – teksty, zdjęcia, filmy umieszczane na stronie Sklepu internetowego przez Usługobiorcę.
+
+Umowa sprzedaży: umowa sprzedaży w rozumieniu ustawy Kodeks cywilny zawierana za pośrednictwem Sklepu internetowego pomiędzy Usługodawcą jako sprzedającym a Usługobiorcą jako kupującym. W przypadku Konsumentów, umowa sprzedaży jest umową zawieraną na odległość w rozumieniu ustawy z dnia 30.05.2014 r. o prawach konsumentów. Na treść umowy składa się zamówienie oraz OWS.
+
+Usługa - usługa świadczona drogą elektroniczną w rozumieniu ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną. W przypadku korzystania ze Sklepu internetowego za pośrednictwem strony WWW, Usługa może polegać na:
+
+1)      wyświetlaniu Usługobiorcy treści stron Sklepu internetowego,
+
+2)      założeniu Konta za pośrednictwem Formularza rejestracji
+
+3)      korzystaniu z funkcjonalności Konta w Sklepie internetowym umożliwiających:
+
+a)       korzystanie z Formularza zamówienia,
+
+b)      korzystanie z Formularza reklamacji,
+
+c)       korzystanie z Formularza zwrotu,
+
+d)      korzystanie z Formularza zapytania,
+
+e)      korzystanie z konfiguratorów,
+
+f)        zamieszczanie Treści w Sklepie internetowym,
+
+g)       dodanie Towaru do Schowka,
+
+h)      wysłanie do Usługodawcy Zapytania ofertowego,
+
+i)        korzystanie z Formularza zamówienia usługi Udostępnianie bazy produktowej.
+
+4)      korzystaniu z Formularza kontaktowego,
+
+Świadczenie Usługi za pośrednictwem Aplikacji mobilnej polega na
+
+1)       przeglądaniu przez Usługobiorcę katalogu Towarów,
+
+2)      porównywaniu przez Usługobiorcę cen Towarów z ceną podaną przez Usługobiorcę,
+
+3)      dokonywaniu przez Klienta zakupów w Sklepie Internetowym,
+
+4)      dodawaniu przez Klienta Towarów do Schowka w Sklepie internetowym,
+
+5)      dostępie do informacji o wszystkich złożonych przez Klienta zamówieniach w Sklepie internetowym oraz do informacji o wystawionych dla Klienta fakturach i fakturach korektach,
+
+6)      dostępie do informacji o aktualnych promocjach w Sklepie internetowym.
+
+Usługi są świadczone nieodpłatnie. Umowa, której przedmiotem jest założenie Konta jest zawarta na czas nieoznaczony. Pozostałe usługi są świadczone przez czas oznaczony wynikający z istoty danej funkcjonalności Sklepu internetowego lub decyzji Usługobiorcy o zakończeniu korzystania z danej Usługi.
+
+Usługobiorca – osoba fizyczna, osoba prawna, jednostka organizacyjna nieposiadająca osobowości prawnej, korzystająca ze Sklepu internetowego. Usługobiorca jest Klientem w rozumieniu OWS w ramach Umowy sprzedaży. Osoba fizyczna zakładająca Konto w Sklepie internetowym oświadcza, że posiada zdolność do czynności prawnych, chyba, że obowiązujące przepisy prawa pozwalają na zawarcie umowy również przez osobę posiadającą ograniczoną zdolność do czynności prawnych. Osoba zakładająca Konto w imieniu innego podmiotu oświadcza, że jest upoważniona do działania w imieniu tego podmiotu. Ilekroć w niniejszym Regulaminie jest mowa o Usługobiorcy należy przez to rozumieć również użytkownika Subkonta przypisanego do Konta tego Usługobiorcy, chyba, że wprost postanowiono inaczej. Umowy sprzedaży zawierane przez użytkowników Subkont zgodnie z przyznanym przez Usługobiorcę poziomem uprawnień, zawierane są w imieniu i na rzecz Usługobiorcy.
+
+Usługodawca : TIM S.A. z siedzibą we Wrocławiu przy ul. Jaworskiej 13, 53-612 Wrocław, wpisana do Rejestru Przedsiębiorców przez Sąd Rejonowy dla Wrocławia – Fabrycznej VI Wydział Gospodarczy KRS, pod numerem KRS 0000022407, o kapitale zakładowym w wysokości 22.199.200,00 zł w całości wpłaconym, legitymująca się numerem identyfikacji podatkowej NIP: 897-000-96-78, REGON: 930339253, Biuro obsługi klienta: tel.: 801 500 700, tel. (71) 73 28 600, e-mail: sklep@tim.pl ., (dalej również TIM S.A.). Usługodawca jest Sprzedawcą w rozumieniu OWS w ramach Umowy sprzedaży.
+
+Zapytanie ofertowe – funkcja Konta dostępna za pośrednictwem przycisku „Wyślij zapytanie ofertowe” umożliwiająca skierowanie do Usługodawcy zapytania o przygotowanie oferty dotyczącej Towarów niedostępnych standardowo w Sklepie internetowym lub o przygotowanie oferty na innych warunkach w zakresie ceny lub kosztów transportu, niż dostępne dla tego Usługobiorcy na normalnych zasadach obowiązujących go w Sklepie internetowym.
+
+Zamówienie - oświadczenie woli Klienta składane za pomocą Formularza Zamówienia, Formularza zamówienia usługi Udostępnianie bazy produktowej i zmierzające bezpośrednio do zawarcia odpowiednio Umowy sprzedaży, umowy o świadczenie usługi Udostępnianie bazy produktowej.
+
+    Regulamin jest udostępniony do wydrukowania, pobrania, odtwarzania i utrwalenia na stronie Sklepu internetowego, w zakładce „Regulamin”.
+
+
+
+III. WYMAGANIA TECHNICZNE NIEZBĘDNE DO WSPÓŁPRACY Z SYSTEMEM TELEINFORMATYCZNYM, KTÓRYM POSŁUGUJE SIĘ USŁUGODAWCA
+
+1.       Wymagania techniczne niezbędne do korzystania z Usług za pośrednictwem strony WWW:
+
+1)      urządzenie końcowe z możliwością korzystania z Internetu,
+
+2)      podłączenie do Internetu,
+
+3)      poprawnie skonfigurowana przeglądarka zgodnie ze standardami Microsoft Internet Explorer, Opera, Firefox lub Chrome w najwyższej wersji,
+
+4)      rozdzielczość ekranu minimum 1024x768,
+
+5)      włączona opcja akceptacji "cookies",
+
+6)      aktywny interpretator JavaScript
+
+7)      zainstalowany flash plug-in,
+
+8)       aktywne konto poczty elektronicznej (e-mail).
+
+2.       Wymagania techniczne wymagane do korzystania z Usług za pośrednictwem Aplikacji mobilnej:
+
+1)      urządzenie przenośne z systemem Google Android w wersji co najmniej 4.0.,
+
+2)      iOS 8, podłączenie do Internetu.
+
+IV. WARUNKI ZAWIERANIA, WYKONYWANIA I ROZWIĄZYWANIA UMÓW O ŚWIADCZENIE USŁUG DROGĄ ELEKTRONICZNĄ
+
+
+
+1.       Sklep internetowy
+
+Rozpoczęcie korzystania ze Sklepu internetowego następuje w chwili wyświetlenia strony Sklepu internetowego na ekranie urządzenia Usługobiorcy. Zakończenie korzystania ze Sklepu internetowego następuje z chwilą zamknięcia w przeglądarce internetowej okna Sklepu internetowego.
+
+
+
+2.       Formularz rejestracji
+
+1)      Usługobiorca może założyć Konto w toku składania Zamówienia lub bez konieczności jednoczesnego zakupu Towaru w Sklepie internetowym. Nie jest możliwe założenie Konta za pośrednictwem Aplikacji mobilnej.
+
+2)       W celu założenia Konta bez jednoczesnego zakupu Towaru konieczne jest:
+
+a)        dokonanie wyboru, poprzez zaznaczenie odpowiedniej opcji - czy Konto jest zakładane jako firma czy klient indywidualny,
+
+b)      wypełnienie danymi w Formularzu rejestracyjnym wszystkich pól oznaczonych„*”
+
+c)       wyrażenie zgody na treść Regulaminu Sklepu internetowego, OWS, treść Polityki prywatności
+
+d)      kliknięcie na przycisk „Zarejestruj się”
+
+3)       Usługobiorca nie jest zobowiązany do akceptacji pozostałych Klauzul dostępnych na etapie rejestracji Konta.
+
+4)      Odmowa uzupełnienia pola oznaczonego „*” jako wymaganego, uniemożliwia utworzenie Konta.
+
+5)      Usługobiorca zobowiązany jest do podania w formularzu rejestracji prawdziwych danych.
+
+6)       Po prawidłowym wypełnieniu Formularza rejestracyjnego oraz kliknięciu na przycisk „Zarejestruj się”, na adres poczty elektronicznej podany przez Usługobiorcę w ww. formularzu wysyłana jest przez Usługodawcę wiadomość zawierająca zawiadomienie o utworzeniu Konta przez osobę posługującą się ww. adresem poczty elektronicznej. Warunkiem dokończenia rejestracji Konta jest kliknięcie przez adresata ww. wiadomości na dołączony do niej link, który jest aktywny przez 36 godzin po jego wysłaniu na adres mailowy Użytkownika. Korzystanie z Konta jest możliwe od chwili kliknięcia w przesłany link aktywacyjny. Umowa o posiadanie Konta jest zawierana z Użytkownikiem pod warunkiem rozwiązującym umowę w przypadku niedokończenia rejestracji Konta. Brak kliknięcia w link aktywacyjny w ciągu 36 godzin od jego otrzymania powoduje rozwiązanie umowy o posiadanie Konta oraz usunięcie Konta wraz z danymi  podanymi przez Użytkownika w formularzu rejestracyjnym, o którym mowa w pkt 2) powyżej.
+
+7)      W przypadku zakładania Konta w trakcie procesu zakupowego, do założenia Konta konieczne jest:
+
+a)       wypełnienie w Formularzu zamówienia wszystkich pól oznaczonych „*” jako wymagane,
+
+b)      wyrażenie zgody na treść Regulaminu Sklepu internetowego, OWS, treść Polityki prywatności
+
+c)       kliknięcie na przycisk „Przejdź do podsumowania zamówienia”. W takim przypadku do Usługobiorca jest wysyłana przez Usługodawcę wiadomość zawierająca zawiadomienie o utworzeniu Konta przez osobę posługującą się ww. adresem poczty elektronicznej.
+
+
+
+    3.       Konto
+
+1)      Konto dostępne jest dla osób, które zalogują się do niego podając odpowiednie Login i Hasło.
+
+2)      Usługobiorca ponosi odpowiedzialność za skutki udostępniania przez siebie Loginu i Hasła osobom trzecim, w szczególności swoim pracownikom lub współpracownikom.
+
+3)      Usługobiorca będący przedsiębiorcą ma możliwość utworzenia w ramach Konta oddzielnych Subkont z różnymi poziomami uprawnień dla ich użytkowników.
+
+4)      Konsument, który założył Konto ma prawo odstąpić od umowy o świadczenie Usług w terminie 14 dni bez podania jakiejkolwiek przyczyny. Termin do odstąpienia od umowy wygasa po upływie 14 dni od dnia zawarcia umowy.
+
+5)      Skorzystanie z ww. prawa odstąpienia od umowy wymaga do Konsumenta poinformowania Usługodawcy o swojej decyzji o odstąpieniu od niniejszej umowy w drodze jednoznacznego oświadczenia (na przykład pismo wysłane pocztą, faksem lub pocztą elektroniczną).
+
+6)      Konsument może skorzystać z wzoru formularza odstąpienia od umowy, o którym mowa w cz. IV ust. 3 pkt. 8 jednak nie jest to obowiązkowe.
+
+7)      Aby zachować termin do odstąpienia od umowy o świadczenie Usług, wystarczy, wysłać informację dotyczącą wykonania ww. prawa odstąpienia od umowy przed upływem terminu do odstąpienia od umowy.
+
+8)       Wzór formularza odstąpienia od umowy o świadczenie Usługi:
+
+WZÓR FORMULARZA ODSTĄPIENIA OD UMOWY PRZEZ KONSUMENTA
+
+(formularz ten należy wypełnić i odesłać tylko w przypadku chęci odstąpienia od umowy o świadczenie Usługi polegającej na założeniu Konta w Sklepie internetowym)
+
+Adresat: TIM S.A., ul. Jaworska 13, 53-612 Wrocław, adres e-mail: sklep@tim.pl
+
+Ja/My(*) ………………..…………………………………………………………………………………..……………………………………
+
+niniejszym informuję/informujemy(*) o moim/naszym odstąpieniu od umowy o świadczenie następującej usługi(*)
+
+…………………………………………………………………………………………………………………………..……………………...…..
+
+Imię i nazwisko konsumenta(-ów) ………………………………………………………………………………………………..
+
+Adres konsumenta(-ów) …………………………………………………………………………………………………………….…
+
+Podpis konsumenta(-ów) (tylko jeżeli formularz jest przesyłany w wersji papierowej)
+
+ …………….…….…………………………….…………..
+
+Data ………………………………………………….…
+
+9)      Niezależnie od prawa odstąpienia od umowy, Usługobiorca może usunąć Konto, w każdym czasie, bez okresu wypowiedzenia, poprzez wysłanie oświadczenia woli w sprawie usunięcia Konta w dowolny sposób zapewniający jego doręczenie TIM S.A., w szczególności poprzez przesłanie wiadomości pocztą elektroniczną na adres: sklep@tim.pl lub w formie pisemnej na adres: TIM S.A. ul. Jaworska 13, 53-612 Wrocław. Użytkownik Subkonta nie może usunąć Konta Usługobiorcy.
+
+10)   Usunięcie Konta:
+
+a)      nie ma wpływu na obowiązek wykonania Umów sprzedaży zawartych do czasu otrzymania przez Usługodawcę oświadczenia woli Usługobiorcy w sprawie usunięcia Konta,
+
+b)      nie ma wpływu na skuteczność zamówienia kuriera w celu odbioru Towaru lub opakowania, złożonego do czasu otrzymania przez Usługodawcę oświadczenia woli Usługobiorcy w sprawie usunięcia Konta.
+
+c)      nie ma wpływu na skuteczność reklamacji zgłoszonej przed otrzymaniem przez Usługodawcę oświadczenia woli Usługobiorcy w usunięciu Konta.
+
+d)      nie ma wpływu na prawo Usługodawcy do publikowania w Sklepie Treści zamieszczonych przez Usługobiorcę przed usunięciem Konta.
+
+e)      powoduje rozwiązanie przez Usługobiorcę umowy o świadczenie usługi Udostępnianie bazy produktowej.
+
+
+
+4.       Aplikacja mobilna
+
+1)      Rozpoczęcie korzystania z Usług za pośrednictwem Aplikacji mobilnej następuje każdorazowo z chwilą uruchomienia Aplikacji na urządzeniu mobilnym Usługobiorcy.
+
+2)      Zakończenie korzystania z Usług za pośrednictwem Aplikacji mobilnej następuje każdorazowo z chwilą zamknięcia Aplikacji na urządzeniu mobilnym Usługobiorcy.
+
+3)      Usługobiorca może w każdym czasie zakończyć korzystanie z Usługi, z której korzysta za pośrednictwem Aplikacji mobilnej. W tym celu Usługobiorca powinien wyłączyć Aplikację mobilną lub odinstalować Aplikację mobilną z urządzenia mobilnego, na którym została ona zainstalowana.
+
+4)      Usunięcie Aplikacji z urządzenia mobilnego nie powoduje zamknięcia Konta w Sklepie internetowym.
+
+5)      Usunięcie Aplikacji mobilnej z urządzenia mobilnego nie ma wpływu na obowiązek wykonania Umów sprzedaży zawartych za pośrednictwem Sklepu internetowego.
+
+
+
+5.        Formularz Zamówienia
+
+1)      Korzystanie z Formularza Zamówienia polega na precyzowaniu warunków Umowy Sprzedaży, takich jak ilość i rodzaj Towaru, sposób dostawy, sposób płatności, termin płatności (w przypadku Przedsiębiorcy, któremu został przyznany limit kredytowy), miejsce dostarczenia Towarów oraz - jeżeli rozpoczął korzystanie z Formularza Zamówienia bez uprzedniego zalogowania się do Konta danych identyfikujących Usługobiorcę.
+
+2)       Korzystanie z Formularza Zamówienia rozpoczyna się z momentem dodania przez Usługobiorcę pierwszego Towaru do Koszyka a ulega zakończeniu z chwilą złożenia Zamówienia poprzez kliknięcie na przycisk „Złóż zamówienie z obowiązkiem zapłaty” albo z chwilą wcześniejszego zamknięcia strony Sklepu internetowego bez złożenia Zamówienia.
+
+3)      Usługobiorca może korygować wcześniej wprowadzone dane w Formularzu Zamówienia do chwili kliknięcia na przycisk „Złóż zamówienie z obowiązkiem zapłaty”. Usługobiorca może w każdej chwili przerwać proces wypełniania Formularza Zamówienia poprzez zamknięcie strony Sklepu internetowego lub poprzez wyjście z Formularza Zamówienia i przejście na inną stronę Sklepu. Zamknięcie strony Sklepu powoduje skasowanie wcześniej wprowadzonych danych. Przejście do innej strony Sklepu powoduje skasowanie wcześniej wprowadzonych danych z wyjątkiem Towarów dodanych do Koszyka. Towary dodane do Koszyka pozostają zapisane w Koszyku do czasu wylogowania się z Konta.
+
+4)      Dodanie Towaru do Koszyka nie jest równoznaczne z potwierdzeniem dostępności Towaru na potrzeby Zamówienia. Dostępność Towaru jest weryfikowana każdorazowo po naciśnięciu na przycisk „Przejdź do podsumowania zamówienia”.
+
+5)       Z chwilą kliknięcia przez Usługobiorcę na przycisk „Złóż zamówienie z obowiązkiem zapłaty” do Usługobiorcy jest wysyłana wiadomość za pośrednictwem poczty elektronicznej z potwierdzeniem wszystkich warunków zawartej Umowy Sprzedaży oraz dodatkowo, w przypadku wyboru opcji płatności „Przedpłata na konto”, z numerem konta bankowego, na który należy wpłacić cenę za Towar oraz z terminem płatności.
+
+6)      W przypadku otrzymania przez Usługobiorcę Oferty w odpowiedzi na wysłanie Zapytania ofertowego, do zawarcia umowy sprzedaży dochodzi poprzez kliknięcie przez Klienta na przycisk „Zaakceptuj ofertę”.
+
+
+
+6.       Schowek
+
+1)      W celu skorzystania ze Schowka konieczne jest zalogowanie się do Konta.
+
+2)      Korzystanie ze Schowka polega na dodaniu Towaru do listy Towarów w Schowku.
+
+3)      Korzystanie ze Schowka rozpoczyna się z momentem kliknięcia przez Usługobiorcę na przycisk „Dodaj do schowka” a ulega zakończeniu z chwilą usunięcia danego Towaru ze Schowka.
+
+
+
+7.        Formularz reklamacji
+
+1)      W celu skorzystania z Formularza reklamacji konieczne jest zalogowanie się do Konta.
+
+2)      Korzystanie z Formularza reklamacji polega na wskazaniu Umowy sprzedaży, której dotyczy reklamacja, wypełnieniu wszystkich danych oznaczonych „*” jako wymagane, określeniu przyczyny reklamacji spośród dostępnych opcji na liście rozwijalnej, opcjonalnie żądania wobec Usługodawcy w związku ze składaną reklamacją oraz wyrażeniu zgody na przetwarzanie danych osobowych do celów rozpatrzenia reklamacji. System informatyczny Sklepu internetowego domyślnie kopiuje do formularza dane podmiotu, na którego rzecz założonej jest Konto. Osoba zgłaszająca reklamację może zmienić ww. dane.
+
+3)       Korzystanie z Formularza reklamacji rozpoczyna się z momentem wypełnienia przez Usługobiorcę jednego z pól (nr faktury, nr WZ, indeks Towaru) identyfikujących Umowę sprzedaży, której dotyczy reklamacja a kończy się z chwilą kliknięcia na przycisk „Wyślij wniosek”.
+
+4)      Usługobiorca może korygować wcześniej wprowadzone dane w Formularzu reklamacji do chwili kliknięcia na przycisk „Wyślij wniosek”. Usługobiorca może w każdej chwili przerwać proces wypełniania Formularza reklamacji poprzez zamknięcie strony Sklepu internetowego lub poprzez wyjście z Formularza reklamacji i przejście na inną stronę Sklepu. Zamknięcie strony Sklepu lub przejście do innej strony Sklepu powoduje skasowanie wcześniej wprowadzonych danych i skutkuje niezłożeniem reklamacji.
+
+5)      Z chwilą kliknięcia przez Usługobiorcę na przycisk „Wyślij wniosek” do Usługobiorcy jest wysyłana wiadomość za pośrednictwem poczty elektronicznej z potwierdzeniem otrzymania reklamacji przez Usługodawcę.
+
+
+
+8.       Formularz zwrotu
+
+1)      W celu skorzystania z Formularza zwrotu konieczne jest zalogowanie się do Konta.
+
+2)      Korzystanie z Formularz zwrotu polega na wskazaniu Umowy sprzedaży, której dotyczy zwrot Towaru, dokonaniu wyboru pomiędzy zwrotem na koszt TIM lub zwrotem na koszt własny (zgodnie z warunkami określonymi w OWS), wypełnieniu wszystkich danych oznaczonych „*” jako wymagane, w tym wskazaniu nr konta bankowego, na który ma zostać dokonany zwrot pieniędzy.
+
+3)      Korzystanie z Formularza zwrotu rozpoczyna się z momentem wypełnienia przez Usługobiorcę jednego z pól (nr faktury, nr WZ, indeks Towaru) identyfikujących Umowę sprzedaży, której dotyczy zwrot Towaru a kończy się z chwilą kliknięcia na przycisk „Wyślij wniosek”.
+
+4)      Usługobiorca może korygować wcześniej wprowadzone dane w Formularzu zwrotu do chwili kliknięcia na przycisk „Wyślij wniosek”. Usługobiorca może w każdej chwili przerwać proces wypełniania Formularza zwrotu poprzez zamknięcie strony Sklepu internetowego lub poprzez wyjście z Formularza zwrotu i przejście na inną stronę Sklepu. Zamknięcie strony Sklepu lub przejście do innej strony Sklepu powoduje skasowanie wcześniej wprowadzonych danych i skutkuje niewysłaniem wniosku do Usługodawcy.
+
+5)      Z chwilą kliknięcia przez Usługobiorcę na przycisk „Wyślij wniosek” do Usługobiorcy jest wysyłana wiadomość za pośrednictwem poczty elektronicznej z potwierdzeniem otrzymania przez Usługodawcę żądania zwrotu Towaru.
+
+
+
+9.       Formularz zapytania
+
+1)      W celu skorzystania z Formularza zapytania konieczne jest zalogowanie się do Konta.
+
+2)      Korzystanie z Formularza zapytania polega na precyzowaniu przez Usługobiorcę warunków zapytania spośród dostępnych opcji w tym, w przypadku gdy dany formularz zapytania to umożliwia – w oparciu o przesłane przez Usługobiorcę pliki.
+
+3)      Korzystanie z Formularza zapytania rozpoczyna się z momentem dokonania wyboru w zakresie któregokolwiek z kryteriów dostępnych w postaci rozwijalnych pasków wyboru, a kończy się z chwilą dokonania wyboru w zakresie wszystkich dostępnych kryteriów oraz kliknięcia na przycisk „Złóż zapytanie ofertowe”, albo z chwilą wcześniejszego zamknięcia strony Sklepu internetowego bez złożenia wysłania zapytania o wycenę, co skutkuje nie wysłaniem zapytania.
+
+4)      Usługobiorca może korygować wcześniej wprowadzone dane w Formularzu zapytania do chwili kliknięcia na przycisk „Złóż zapytanie ofertowe”. Usługobiorca może w każdej chwili przerwać proces wypełniania Formularza zapytania poprzez zamknięcie strony Sklepu internetowego lub poprzez wyjście z Formularza zapytania i przejście na inną stronę Sklepu. Zamknięcie strony Sklepu lub przejście do innej strony Sklepu powoduje skasowanie wcześniej wprowadzonych danych i skutkuje nie wysłaniem zapytania do Usługodawcy.
+
+5)      Po wysłaniu zapytania Usługodawca przesyła za pośrednictwem poczty elektronicznej ofertę zakupu podzespołów opracowaną na podstawie kryteriów wybranych przez Usługobiorcę.
+
+6)      Zbudowanie urządzenia na podstawie przesłanych dokumentów wymaga uprzedniego sporządzenia odpowiedniego projektu przez osobę legitymującą się uprawnieniami w zakresie projektowania w rozumieniu odpowiednich obowiązujących przepisów prawa i norm. Lista podzespołów wyświetlana w odpowiedzi na dokonany przez Usługobiorcę wybór kryteriów technicznych nie zastępuje projektu elektrycznego, o którym mowa w zdaniu poprzedzającym. Usługodawca nie ponosi odpowiedzialności za skutki wykonania urządzenia przez Usługobiorcę w oparciu o listę podzespołów otrzymaną w wyniku skorzystania z Formularza zapytania.
+
+
+
+10.   Formularz konfiguratorów
+
+1)      W celu skorzystania z Formularza konfiguratora konieczne jest zalogowanie się do Konta.
+
+2)      Korzystanie z Formularza konfiguratora polega na precyzowaniu przez Usługobiorcę parametrów technicznych, spośród dostępnych opcji w celu otrzymania listy Towarów spełniających określone przez Usługobiorcę parametry.
+
+3)      Korzystanie z Formularza konfiguratora rozpoczyna się z momentem dokonania wyboru w zakresie któregokolwiek z kryteriów dostępnych w postaci pasków wyboru lub pól typu „check box”, a kończy się z chwilą dokonania wyboru w zakresie wszystkich dostępnych kryteriów oraz wyświetlenia listy podzespołów niezbędnych do wykonania konfigurowanego urządzenia lub układu elektrycznego, albo z chwilą wcześniejszego zamknięcia strony Sklepu internetowego.
+
+4)      Usługobiorca może w każdej chwili korygować wcześniej wprowadzone dane w Formularzu konfiguratora. Zmiana, któregokolwiek z parametrów technicznych powoduje dostosowanie listy podzespołów do dokonanego wyboru przez Usługobiorcę, chyba, że w danym przypadku właściwości danego konfiguratora wymagają zaktualizowania wyników poprzez kliknięcie na odpowiedni przycisk.
+
+5)      Usługobiorca może w każdej chwili przerwać proces wypełniania Formularza konfiguratora poprzez zamknięcie strony Sklepu internetowego lub poprzez wyjście z Formularza konfiguratora i przejście na inną stronę Sklepu. Zamknięcie strony Sklepu lub przejście do innej strony Sklepu powoduje skasowanie wcześniej wprowadzonych danych i skutkuje nie wysłaniem danych z formularza do Usługodawcy.
+
+6)      Po wyświetleniu listy podzespołów Usługobiorca może kliknąć na przycisk „Do koszyka”, co spowoduje otwarcie strony Formularza zamówienia. Niektóre konfiguratory oferują możliwość dodania do Koszyka, wg wyboru Usługobiorcy, jedynie części Towarów z wyświetlonej listy podzespołów. W tym celu, przed dodaniem Towarów do Koszyka, koniecznej jest uprzednie dodanie wybranych przez siebie Towaróa. do odrębnej listy.
+
+7)      Zbudowanie urządzenia elektrycznego lub instalacji elektrycznej wymaga uprzedniego sporządzenia odpowiedniego projektu przez osobę legitymującą się uprawnieniami w zakresie projektowania w rozumieniu odpowiednich obowiązujących przepisów prawa. Lista podzespołów wyświetlana w odpowiedzi na dokonany przez Usługobiorcę wybór kryteriów technicznych nie zastępuje projektu elektrycznego, o którym mowa w zdaniu poprzedzającym i stanowi jedynie propozycję możliwego doboru podzespołów opracowaną w oparciu o powszechnie dostępne katalogi producentów ww. podzespołów. Usługodawca nie gwarantuje kompatybilności podzespołów wyszczególnionych na liście wyświetlanej w odpowiedzi na dokonany przez Usługobiorcę wybór kryteriów technicznych, jak również nie gwarantuje przydatności do jakichkolwiek celów, urządzenia lub instalacji elektrycznej zbudowanej w oparciu o te podzespoły. Przed dokonaniem zakupu ww. podzespołów Usługobiorca powinien się zapoznać ze specyfikacją techniczną ww. podzespołów oraz w razie wątpliwości skonsultować się z osobą posiadającą odpowiednią wiedzę oraz uprawnienia w zakresie odpowiednio projektowania lub eksploatacji sieci, urządzeń oraz instalacji elektrycznych. Usługodawca nie ponosi odpowiedzialności za skutki wykonania urządzeń lub układów elektrycznych przez Usługobiorcę w oparciu o listę podzespołów otrzymaną w wyniku skorzystania z Formularza konfiguratora.
+
+
+
+11.   Zamieszczanie Treści
+
+
+
+1)      Usługodawca udostępnia możliwość zamieszczania Opinii o Towarach będących w ofercie Sklepu internetowego, Komentarzy do Opinii lub innych Komentarzy, oraz wizytówki Klienta.
+
+2)      W celu zamieszczenia Opinii, Komentarza lub wizytówki Klienta konieczne jest zalogowanie się do Konta.
+
+3)       Usługobiorca może dodawać Opinie oraz Komentarze pod pseudonimem, korzystając z wybranego przez siebie „Nicka”.
+
+4)      Zamieszczanie Treści odbywa się za pośrednictwem Formularza Opinii, Komentarza lub Wizytówki Klienta.
+
+5)      Korzystanie z Formularza Opinii polega na dokonaniu wyboru w udostępnionych polach wyboru, wpisaniu tekstu w polach tekstowych lub dodaniu zdjęć lub linków do filmu.
+
+6)      W celu opublikowania Opinii konieczne jest zaznaczenie wszystkich pól wyboru, uzupełnienie wszystkich pól tekstowych zaznaczonych, jako wymagane oraz kliknięcie na przycisk „Dodaj opinię”.
+
+7)       Korzystanie z Formularza Komentarza polega na zamieszczeniu tekstu w polu tekstowym.
+
+8)      W celu opublikowania Komentarza konieczne jest wpisanie tekstu w pole tekstowe oraz klikniecie na przycisk „Dodaj komentarz”.
+
+9)      Klient, który osiągnie odpowiedni, określony przez Usługodawcę, poziom punktów z tytułu dodawania Komentarzy lub Opinii, ma prawo zamieścić Wizytówkę Klienta.
+
+10)   Korzystanie z Formularza Wizytówki Klienta polega na zamieszczeniu w ramach Konta, tekstu, w tym linku do strony internetowej Klienta lub dodaniu zdjęć lub logotypu (rozmiar max: szerokość 354 px – wysokość 197px). Wizytówka Klienta jest widoczna po kliknięciu na Nick Klienta, którym posługuje się on przy zamieszczaniu Opinii.
+
+11)   Usługobiorca może w każdej chwili zakończyć korzystanie z edytowanego Formularza Opinii, Komentarza lub Wizytówki Klienta poprzez zamknięcie strony Sklepu internetowego lub przejście na inną stronę Sklepu internetowego. Zamknięcie strony Sklepu lub przejście do innej strony Sklepu w trakcie edycji danego Formularza powoduje skasowanie wcześniej wprowadzonych danych.
+
+12)   Dodawane przez Usługobiorców Treści nie mogą zawierać treści naruszających polskie lub międzynarodowe przepisy prawa, dobre obyczaje lub normy moralne, obrażające godność lub naruszające dobra osobiste innych osób, wulgarnych, obraźliwych, popierających radykalne postawy społeczne lub głoszących takie poglądy (wszelkiego rodzaju dyskryminacja rasowa, etniczna, ze względu na płeć, wyznanie itp.),  treści pornograficznych, adresów e-mailowych, nr komunikatorów, wizerunku osób fizycznych, linków do innych stron poza www.tim.pl oraz poza profilami, kanałami lub kontami prowadzonymi przez Usługodawcę w mediach społecznościowych, linków do filmów w serwisie YouTube, ocen serwisów Usługodawcy oraz serwisów producentów, zdjęć i grafik nie związanych z Towarem lub zastosowaniem Towaru. Zabronione jest dodawanie opinii nieprawdziwych, pisanych na zamówienie osób trzecich, w celu wprowadzenia w błąd innych osób w zakresie posiadania lub nie posiadania określonych cech przez Towary będące przedmiotem opinii.
+
+13)   Treści nie mogą być kopiowane z innych treści, których autorem jest Usługobiorca, znajdujących się w Internecie.
+
+14)   Treści nie mogą stanowić reklamy, której formy są zakazane przepisami ustawy z dnia 16.04.1993 r. o zwalczaniu nieuczciwej konkurencji oraz ustawy z dnia 23.07.2007 r. o przeciwdziałaniu nieuczciwym praktykom rynkowym.
+
+15)   Do Opinii mogą być dodawane zdjęcia (pliki typu jpg, png.) lub filmy (link do YouTube) związane z Towarem lub zastosowaniem Towaru.
+
+16)   Autorem Treści może być tylko podmiot dodający daną Treść. Dodając Treść, Usługobiorca, który nie posiada Subkonta, oświadcza, że jest jej autorem oraz, że korzystanie przez Usługodawcę z danej Treści nie będzie naruszać praw osób trzecich.
+
+17)   Jeżeli Treści stanowią utwory w rozumieniu ustawy z dnia 4 lutego 1994 roku o prawie autorskim i prawach pokrewnych, Usługobiorca będący jej autorem zwany dalej Licencjodawcą, zamieszczając Treści w Sklepie Internetowym udziela Usługodawcy, zwanemu dalej Licencjobiorcą, na czas nieoznaczony licencji nieodpłatnej, niewyłącznej, przenoszalnej, z prawem do udzielania sublicencji, bez ograniczeń terytorialnych, na korzystanie z ww. utworów na wszystkich polach eksploatacji określonych w art. 50 ustawy z dnia 4 lutego 1994 roku o prawie autorskim i prawach pokrewnych oraz udziela mu nieodpłatnie, nieograniczoną czasowo oraz terytorialnie zgodę na korzystanie z opracowań ww. utworów, na ww. polach eksploatacji oraz zobowiązuje się nieodpłatnie, bez ograniczeń czasowych, terytorialnych, nie wykonywać przysługujących mu autorskich praw osobistych do ww. utworów.
+
+18)   Usługobiorca, który utworzył Subkonto oświadcza, iż użytkownicy Subkonta, którzy dodają w ramach jego Konta Treści stanowiące utwory w rozumieniu ustawy z dnia 4 lutego 1994 roku o prawie autorskim i prawach pokrewnych, udzielają mu każdorazowo na czas nieoznaczony licencji nieodpłatnej, niewyłącznej, przenoszalnej, z prawem do udzielania sublicencji, bez ograniczeń terytorialnych, na korzystanie z ww. utworów na wszystkich polach eksploatacji określonych w art. 50 ustawy z dnia 4 lutego 1994 roku o prawie autorskim i prawach pokrewnych oraz udzielają Usługobiorcy nieodpłatnie, nieograniczoną czasowo oraz terytorialnie zgodę na wyrażanie w ich imieniu osobom trzecim zgody na korzystanie z opracowań ww. utworów, na ww. polach eksploatacji oraz wyrażają zgodę na wykonywanie przez Usługobiorcę w ich imieniu autorskich praw osobistych.
+
+19)   W przypadku, gdy podmiotem dodającym Treści jest użytkownik Subkonta, jeżeli ww. Treści stanowią utwory w rozumieniu ustawy z dnia 4 lutego 1994 roku o prawie autorskim i prawach pokrewnych, Usługobiorca zwany dalej Sublicencjodawcą, udziela Usługodawcy, zwanemu dalej Sublicencjobiorcą, na czas nieoznaczony licencji nieodpłatnej, niewyłącznej, przenoszalnej, z prawem do udzielania sublicencji, bez ograniczeń terytorialnych, na korzystanie z ww. utworów na wszystkich polach eksploatacji określonych w art. 50 ustawy z dnia 4 lutego 1994 roku o prawie autorskim i prawach pokrewnych oraz udziela mu nieodpłatnie, nieograniczoną czasowo oraz terytorialnie zgodę na korzystanie z opracowań ww. utworów, na ww. polach eksploatacji oraz zobowiązuje się nieodpłatnie, bez ograniczeń czasowych oraz terytorialnych, nie wykonywać przysługujących autorskich praw osobistych przysługujących autorom ww. utworów.
+
+20)   Termin obowiązywania licencji lub sublicencji rozpoczyna bieg, począwszy od dnia umieszczenia utworu na stronie Sklepu internetowego.
+
+21)   Usługobiorca wyraża zgodę na dokonywanie przez Usługodawcę zmian w Treściach i w tym zakresie zobowiązuje się nie wykonywać autorskiego prawa osobistego do nienaruszania treści i formy utworu.
+
+22)   W przypadku wypowiedzenia licencji, okres wypowiedzenia wynosi 5 lat.
+
+23)   Zgłoszenie przez Usługobiorcę żądania usunięcia dotyczących go danych osobowych na podstawie art. 17 Rozporządzenia ogólnego ochronie danych (RODO), jest równoznaczne z wykonaniem przez Usługobiorcę przysługującego mu osobistego prawa autorskiego do anonimowego udostępnienia utworu.
+
+24)   Usługobiorca oraz użytkownik Subkonta ma możliwość zbierania punktów obrazujących poziom jego aktywności w zakresie dodawania Opinii lub Komentarzy.
+
+25)   Usługodawca ma prawo moderować Treści pod względem ich zgodności z Regulaminem i obowiązującymi przepisami prawa. Usługodawca ma prawo nie publikować Treści w przypadku, gdy w jego ocenie nie spełniają warunków, o których mowa powyżej.
+
+26)   Usługodawca może przekazać pozostające w jego posiadaniu dane Usługobiorców sądom, prokuraturze, policji i innym uprawnionym organom lub instytucjom w związku z prowadzonymi przez ww. organy i instytucje postępowaniami dotyczącymi dodania Treści przez Usługobiorcę.
+
+27)   W przypadku stwierdzenia naruszenia przez Treści, praw Usługodawcy, Usługobiorcy lub praw osób trzecich, obowiązujących przepisów prawa, Regulaminu lub Polityki prywatności każdy może zawiadomić Usługodawcę o tym fakcie poprzez wysłanie wiadomości za pośrednictwem poczty elektronicznej na adres sklep@tim.pl.
+
+
+
+12.    Formularz zamówienia usługi Udostępnianie bazy produktowej
+
+1)      Formularz zamówienia usługi Udostępnianie bazy produktowej jest dostępny wyłącznie dla Przedsiębiorców.
+
+2)      Formularz zamówienia usługi Udostępnianie bazy produktowej jest dostępny w zakładce Udostępnianie bazy produktowej, po zalogowaniu się do Konta w Sklepie internetowym.
+
+3)      Usługa Udostępnianie bazy produktowej jest świadczona w oparciu o odrębny regulamin tej usługi dostępny w zakładce Udostępnianie bazy produktowej.
+
+4)      Formularz zamówienia usługi Udostępnianie bazy produktowej nie jest dostępny dla użytkownika Subkonta w Sklepie internetowym.
+
+5)      Korzystanie z Formularza zamówienia usługi Udostępnianie bazy produktowej polega na sprecyzowaniu warunków umowy o świadczenie usługi Udostępnianie bazy produktowej poprzez dokonanie wyboru spośród dostępnych opcji oraz wprowadzenie treści w aktywnych polach formularza.
+
+6)      Korzystanie z Formularza zamówienia usługi Udostępnianie bazy produktowej rozpoczyna się z chwilą dokonania wyboru przez Usługobiorcę jednego z dostępnych pakietów usługi a ulega zakończeniu z chwilą złożenia Zamówienia poprzez kliknięcie na przycisk „Zamawiam usługę” albo z chwilą wcześniejszego zamknięcia strony Sklepu internetowego bez złożenia Zamówienia.
+
+7)      Usługobiorca może korygować wcześniej wprowadzone dane lub dokonane wybory w Formularzu zamówienia usługi Udostępnianie bazy produktowej do chwili kliknięcia na przycisk „Zamów usługę”. Usługobiorca może w każdej chwili przerwać proces wypełniania Formularza zamówienia usługi Udostępnianie bazy produktowej poprzez zamknięcie strony Sklepu internetowego lub poprzez wyjście z Formularza zamówienia usługi Udostępnianie bazy produktowej i przejście na inną stronę Sklepu internetowego. Zamknięcie strony Sklepu internetowego powoduje skasowanie wcześniej wprowadzonych danych lub dokonanych wyborów i skutkuje nie wysłaniem zamówienia do Usługodawcy.
+
+8)      Z chwilą kliknięcia przez Usługobiorcę na przycisk „Zamów usługę” do Usługobiorcy jest wysyłana wiadomość za pośrednictwem poczty elektronicznej z potwierdzeniem warunków zawartej umowy o świadczenie usługi.
+
+
+
+13.   Formularz kontaktowy
+
+1)      Formularz kontaktowy służy do przesyłania do Usługodawcy wiadomości.
+
+2)      W celu skorzystania z Formularza kontaktowego nie jest konieczne zalogowanie się do Konta.
+
+3)      Korzystanie z Formularza kontaktowego polega na wypełnieniu pól tekstowych oznaczonych „*”, jako wymagane oraz wysłanie do Usługodawcy drogą elektroniczną danych zawartych w formularzu.
+
+4)      Usługobiorca może korygować wcześniej wprowadzone dane do chwili kliknięcia na przycisk oznaczający wysłanie wiadomości do Usługodawcy. Usługobiorca może w każdej chwili przerwać proces wypełniania Formularza kontaktowego poprzez zamknięcie strony Sklepu internetowego lub poprzez przejście na inną stronę Sklepu internetowego. Zamknięcie strony Sklepu internetowego lub przejście na inną stronę powoduje skasowanie wcześniej wprowadzonych danych i skutkuje nie wysłaniem wiadomości do Usługodawcy.
+
+V. POSTĘPOWANIE REKLAMACYJNE
+
+    Usługobiorca ma prawo składać reklamacje w sprawie dotyczącej Usługi.
+    Reklamacja w sprawie Usługi może zostać złożona w dowolny sposób zapewniający dojście oświadczenia woli Usługobiorcy w sprawie reklamacji do TIM S.A., w szczególności drogą elektroniczną za pośrednictwem poczty elektronicznej na adres:  sklep@tim.pl. lub w formie pisemnej na adres: TIM S.A., ul. Jaworska 13, 53-612 Wrocław.
+    Prawidłowo złożona reklamacja powinna zawierać następujące dane:
+
+1)      dane Usługobiorcy (imię, nazwisko, adres, adres poczty elektronicznej),
+
+2)      żądanie zgłaszane w ramach reklamacji.
+
+    TIM S.A. dołoży wszelkich starań, aby reklamacje zostały rozpatrzone w terminie nie później niż w terminie 30 dni od otrzymania reklamacji.
+
+
+
+VI. ZAKAZ DOSTARCZANIA PRZEZ KLIENTA TREŚCI O CHARAKTERZE BEZPRAWNYM
+
+Usługobiorca obowiązany jest do korzystania ze Sklepu internetowego w sposób zgodny z prawem i dobrymi obyczajami mając na uwadze poszanowanie dóbr osobistych oraz praw autorskich i własności intelektualnej Usługodawcy oraz osób trzecich. Zakazane jest dostarczanie przez Usługobiorcę treści o charakterze bezprawnym.
+
+
+
+VII. INFORMACJA O ZAGROŻENIACH ZWIĄZANYCH Z KORZYSTANIEM Z USŁUG ŚWIADCZONYCH DROGĄ ELEKTRONICZNĄ
+
+
+
+Usługodawca, zwraca uwagę, że korzystając z Internetu, w tym korzystając z usług świadczonych drogą elektroniczną, istnieje ryzyko zarażenia systemu teleinformatycznego przez złośliwe oprogramowanie np. wirusy, robaki czy konie trojańskie. Niezależnie od faktu, iż Usługodawca na stronach Sklepu internetowego podejmuje we własnym zakresie środki bezpieczeństwa, każdy użytkownik Internetu powinien zabezpieczyć własny komputer, choćby poprzez instalację programu antywirusowego z aktualną bazą wirusów oraz osobistego firewall’a. Na rynku są dostępne wysokiej jakości programy komercyjne jak i darmowe. Narzędzia te, w zależności od wybranej opcji, w mniejszym lub większym stopniu pozwalają na zabezpieczenie komputera przed niepożądanymi atakami ze strony innych użytkowników Internetu. Należy również podkreślić konieczność prawidłowego ustawienia przeglądarki internetowej. Często spotykanym rodzajem ataku jest atak opierający się na technice „phishing”. Polega ona na usiłowaniu wyłudzenia haseł. Ataki te są przeprowadzane poprzez wysyłanie do potencjalnej ofiary listu elektronicznego z prośbą o zalogowanie się do konta w danym serwisie, dostępnym rzekomo pod linkiem podanym w wiadomości. Linki najczęściej prowadzą do sfałszowanych stron, które w łudzący sposób przypominają oryginalne. Podczas procesu logowania się, podane hasła są przechwytywane z formularzy, a następnie wykorzystywane przez atakującego do zalogowania się do faktycznych kont ofiar. W celu uniknięcia ryzyka takiego ataku Usługobiorca powinien pamiętać, że Usługodawca nigdy nie wysyła wiadomości elektronicznych z prośbą o podanie haseł do kont Usługobiorców. W przypadku otrzymania takiej wiadomości, powinna ona wzbudzić podejrzliwość. Zalecane jest skontaktowanie się z Usługodawcą i poinformowanie o zaistniałej sytuacji. Usługobiorca nie powinien również otwierać stron podanych w linkach w tego typu wiadomościach. Pod żadnym pozorem nie należy przesyłać mailowo żadnych loginów i haseł do Konta. Podczas logowania się do Konta należy zwrócić uwagę, czy w pasku adresu strony wyświetlana jest informacja o korzystaniu przez stronę z protokołu HTTPS. Nie wolno ujawniać loginu i hasła osobom nieupoważnionym przez Usługobiorcę do dostępu do Konta, Należy wprowadzać login i hasło w sposób uniemożliwiający innym osobom ich poznanie. Nie powinno się zapisywać hasła, a samo hasło powinno się zmieniać w regularnych odstępach czasu.
+
+
+
+VIII. DANE OSOBOWE
+
+Szczegółowe informacje dotyczące ochrony danych osobowych klientów Sklepu internetowego dostępne są na stronie www.tim.pl/o-firmie/polityka-prywatnosci
+
+
+
+IX. PRAWA AUTORSKIE
+
+    Strona internetowa Sklepu internetowego jest chroniona prawem autorskim. Wszelkie prawa nieprzyznane wyraźnie Usługobiorcy na podstawie niniejszego Regulaminu pozostają zastrzeżone na rzecz Usługodawcy lub podmiotów udzielających Usługodawcy licencji na korzystanie z poszczególnych utworów prezentowanych w postaci zawartości Strony internetowej.
+    Usługobiorca może korzystać z utworów oraz baz danych zawartych na stronach internetowych Sklepu internetowego w zakresie dozwolonego użytku wyznaczonego przepisami ustawy z dnia 04.02.1994 r. o prawie autorskim i prawach pokrewnych oraz ustawy z dnia 27.07.2001 r. o ochronie baz danych.
+
+ X. POSTANOWIENIA KOŃCOWE
+
+    Usługodawca ma prawo zmienić Regulamin z ważnych przyczyn. Za ważne przyczyny uznaje się:
+
+1)      Wprowadzenie nowych Usług, zmiana lub zaprzestanie świadczenia dotychczasowych Usług, w szczególności w skutek zmiany polityki handlowej Usługodawcy, zmian otoczenia rynkowego Usługodawcy wskutek postępu technicznego, technologicznego, informatycznego, zmiany przepisów prawa.
+
+2)      Wprowadzenie nowych lub zmiana dotychczas obowiązujących przepisów prawa dotyczących Usługodawcy lub Usługobiorcy w szczególności mających wpływ na świadczenie usług drogą elektroniczną lub zawieranie umów na odległość, regulujących prawa i obowiązki konsumentów,
+
+3)      Zmiany lub pojawienia się nowych interpretacji powszechnie obowiązujących przepisów prawa na skutek orzeczeń sądów, albo decyzji organów władzy i administracji publicznej wpływających na działalność Usługodawcy.
+
+    Usługodawca powiadomi Usługobiorcę każdorazowo o planowanej zmianie Regulaminu, w formie komunikatu przesłanego na adres poczty elektronicznej podany Usługodawcy na etapie rejestracji Konta. Nowy Regulamin wejdzie w życie w terminie nie krótszym niż 14 dni od daty otrzymania przez Usługobiorcę ww. powiadomienia. W przypadku nieakceptowania nowej treści Regulaminu Usługobiorca ma prawo rozwiązać umowę w każdym czasie przed dniem jej wejścia w życie, w trybie opisanym w cz. IV ust. 3 pkt. 9 Regulaminu. Zmiana Regulaminu nie wpływa na treść czynności prawnych dokonanych przez Usługodawcę z Usługobiorcą za pośrednictwem Sklepu internetowego do dnia wejścia w życie nowego Regulaminu.
+    Regulamin obowiązuje od dnia 01.08.2021 r.
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="f-row f-menu">
+        <div class="colm sbtw">
+          <div class="f-col">
+            <h4>Przydatne linki</h4>
+            <ul class="f-list">
+              <li><a href="#">Regulamin</a></li>
+              <li><a href="#">Płatności</a></li>
+              <li><a href="#">Reklamacje i zwroty</a></li>
+              <li><a href="#">Polityka prywatności</a></li>
+              <li><a href="#">Polityka cookies</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4></h4>
+            <ul class="f-list">
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Shop.pl</h4>
+            <ul class="f-list">
+              <li><a href="#">O nas</a></li>
+              <li><a href="#">Dane firmy i numer konta</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Regulamin sklepu</a></li>
+              <li><a href="#">Strefa porad</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Informacje</h4>
+            <ul class="f-list">
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Logistyka</a></li>
+              <li><a href="#">Płatności</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="f-row f-logos">
+        <div class="colm sbtw f-logos-c">
+          <div class="logistics">
+            <h3>Logistyka</h3>
+            <div class="f-logos-box">
+              <img src="assets/images/img_dpd.png" alt="DPD">
+              <img src="assets/images/img_gls.png" alt="GLS">
+              <img src="assets/images/img_raben.png" alt="Raben">
+            </div>
+          </div>
+          <div class="payments">
+            <h3>Płatności</h3>
+            <div class="f-logos-box">
+              <img src="assets/images/img_blik.png" alt="Blik">
+              <img src="assets/images/img_mastercard.png" alt="MasterCard">
+              <img src="assets/images/img_przelewy24.png" alt="Przelewy24">
+              <img src="assets/images/img_visa.png" alt="Visa">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="f-row copyright">
+        Copyright &copy <a href="#">Shop.pl</a> | Wszelkie prawa zastrzeżone!
+      </div>
+    </footer>
+  </body>
+</html>

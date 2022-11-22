@@ -1,0 +1,223 @@
+@charset "UTF-8";
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 72px;
+    margin-bottom: 56px;
+}
+.order {
+    width: 1280px;
+    min-height: 38.2vh;
+}
+.order.empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.option-bar {
+    display: inline-block;
+    width: 100%;
+    height: 65px;
+    margin-bottom: 24px;
+    padding: 16px 24px;
+    position: relative;
+}
+.o-button {
+    background: #1c94ea;
+    border: 1px solid #5fb7f7;
+    font-weight: 600;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    float: right;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+.o-button:hover, .o-button:focus {
+    filter: brightness(1.25);
+    transform: scaleZ(110%);
+}
+#all {
+    margin: 8px;
+}
+.cart-info {
+    margin: 6px;
+    font-weight: 600;
+    left: 122px;
+}
+#all, .cart-info {
+    position: absolute; top: 25%;
+    transform: translateX(-50%);
+}
+.order-content {
+    width: 100%;
+}
+.option-bar, .product {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.4);
+}
+.products {
+    list-style: none;
+}
+.product {
+    width: 100%;
+    height: 86px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+.product:last-child {
+    margin-bottom: 0;
+}
+.p-checkbox {
+    margin: 0 24px;
+}
+.p-img {
+    height: 95%;
+}
+.p-info {
+    margin: 0 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.p-prince {
+    font-size: 14px;
+    margin-left: auto;
+}
+.p-amount {
+    width: 62px;
+    height: 32px;
+    margin: 0 16px;
+    background: #fff;
+    border: 1px solid #5fb7f7;
+    cursor: pointer;
+}
+.p-remove {
+    position: relative;
+    width: 32px; height: 32px;
+    margin-right: 16px;
+    background: transparent;
+    border: none; outline: none;
+    cursor: pointer;
+}
+.p-remove::before {
+    content: "\f2ed";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.payment {
+    width: 400px;
+    height: 320px;
+}
+.payment-finalize {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #fff;
+    padding: 32px;
+}
+.prince {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    position: relative;
+}
+.delivery-details {
+    position: absolute;
+    top: 22px; right: 0;
+    color: #0ea30e;
+}
+.button-next {
+    width: 100%;
+    background: #1c94ea;
+    border: 1px solid #116cad;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.4);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+.button-next:hover, .button-next:focus {
+    transform: scale(95%);
+}
+.add-discount-code {
+    width: 100%;
+    padding: 8px 5%;
+    background: #fff;
+    margin: 16px 0;
+}
+.add-discount-code > input {
+    border-radius: 4px;
+}
+.add-discount-code > input[type="text"] {
+    width: 70%;
+    border: 1px solid #2d2d2d;
+    padding: 8px;
+    outline: none;
+}
+.add-discount-code > input[type="button"] {
+    width: 25%;
+    border: 1px solid #2d2d2d;
+    background: #116cad;
+    color: #fff;
+    padding: 8px;
+    outline: none;
+    transition: .5s;
+    cursor: pointer;
+}
+.add-discount-code > input[type="button"]:hover {
+    filter: brightness(110%);
+    transform: scale(105%);
+}
+.add-gift-card {
+    width: 100%;
+    padding: 8px 5%;
+    background: #fff;
+}
+.add-gift-card > input {
+    border-radius: 4px;
+}
+.add-gift-card > input[type="text"] {
+    width: 70%;
+    border: 1px solid #2d2d2d;
+    padding: 8px;
+    outline: none;
+}
+.add-gift-card > input[type="button"] {
+    width: 25%;
+    border: 1px solid #2d2d2d;
+    background: #116cad;
+    color: #fff;
+    padding: 8px;
+    outline: none;
+    transition: .5s;
+    cursor: pointer;
+}
+.add-gift-card > input[type="button"]:hover {
+    filter: brightness(110%);
+    transform: scale(105%);
+}
+.tdn {
+    color: #1c94ea;
+    text-decoration: none;
+}

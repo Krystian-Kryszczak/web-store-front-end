@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Store</title>
+    <link rel="stylesheet" href="assets/css/variables.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/pp.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <!-- Glide.js CDN -->
+    <link rel="stylesheet" href="assets/css/glide.core.css"/> <!-- https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css -->
+    <link rel="stylesheet" href="assets/css/glide.theme.min.css"/> <!-- https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css -->
+    <script src="assets/javascript/glide.js" type="text/javascript"></script> <!-- https://cdn.jsdelivr.net/npm/@glidejs/glide -->
+    <script src="assets/javascript/script.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!--<div class="colm info">
+      <p>Ze względu na zbilżające się święta zamówienia przewidujemy opóźnienia w realizacji zamówień.</p>
+      <i class="info-close fas fa-times"></i>
+      <script src="assets/javascript/info.js" type="text/javascript"></script>
+    </div>-->
+    <header class="header">
+      <div class="h-container">
+        <div class="row align-items-center sbtw">
+          <button class="nav-btn" type="button">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="col h-logo">
+            <a href="/">
+              <img src="assets/images/logo.jpeg" alt="LOGO">
+            </a>
+          </div>
+          <div class="col h-content">
+            <div class="h-row">
+              <div class="h-quick-search">
+                <form action="" method="POST" name="quick_search" class="h-quick-search-box">
+                  <div class="search-container">
+                    <input type="text" name="search" class="form-control quick-search-autocomplete" value="" autocomplete="off" placeholder="Szukaj w ofercie 300 tysięcy produktów"/>
+                    <div class="h-quick-search-dropdown">
+                      <div class="md-top">
+                        <select class="dropdown-native-select form-control" name="elem_id">
+                          <option value="0" selected="selected">Wszystkie działy</option>
+                          <option value="1">Przewody</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary h-quick-search-submit"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="h-controls">
+                <div class="h-control-row">
+                  <a href="#" class="h-control h-clipboard-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-folder h-icon"></i><span>Schowek</span>
+                    </div>
+                  </a>
+                  <a href="#" class="h-control h-user-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-user h-icon"></i><span>Zaloguj się</span>
+                    </div>
+                  </a>
+                  <a href="#" class="h-control h-basket-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-shopping-cart h-icon"></i><span>0,00 zł</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <header class="nav-header">
+        <h3>MENU</h3>
+        <button class="nav-btn" type="button">
+          <span></span><span></span>
+        </button>
+      </header>
+      <div class="colm flex-start nav-content">
+        <ul class="nav-list">
+          <li class="nav-li-c-item">
+            <p class="nav-item">Katrgorie</p>
+            <div class="categoryies" style="height: 0;">
+              <div class="c-list-container">
+                <ul class="c-list">
+                  <li><a href="#" class="c">Aparatura elektryczna</a></li>
+                  <li><a href="#" class="c">Gniazda i łączniki</a></li>
+                  <li><a href="#" class="c">Źródła światła</a></li>
+                  <li><a href="#" class="c">Kable i przewody</a></li>
+                  <li><a href="#" class="c">Elementy prowadzenia kabli</a></li>
+                  <li><a href="#" class="c">Rozdzielnice i obudowy</a></li>
+                  <li><a href="#" class="c">Elektronarzędzia i mierniki</a></li>
+                  <li><a href="#" class="c">Dom i ogród</a></li>
+                  <li><a href="#" class="c">Artykuły biórowe</a></li>
+                  <li><a href="#" class="c">Oprawy oświetleniowe</a></li>
+                  <li><a href="#" class="c">Osprzęt łączeniowy</a></li>
+                  <li><a href="#" class="c">Odzież ochrona i BHP</a></li>
+                  <li><a href="#" class="c">Elektronika użytkowa</a></li>
+                  <li><a href="#" class="c">Wentylacja i ogrzewanie</a></li>
+                  <li><a href="#" class="c">Ochrona odgromowa</a></li>
+                  <li><a href="#" class="c">Domofony i dzwonki</a></li>
+                  <li><a href="#" class="c">Alarmy, domofony, komunikacja</a></li>
+                  <li><a href="#" class="c">Fotowoltaika</a></li>
+                  <li><a href="#" class="c">Pneumatyka</a></li>
+                  <li><a href="#" class="c">Oferty specjalne</a></li>
+                  <li><a href="#" class="c">Inne</a></li>
+                  <li><a href="#" class="c">Nowości</a></li>
+                  <li><a href="#" class="c">IT, GSM</a></li>
+                  <li><a href="#" class="c">Hobby, Zdrowie i Turystyka</a></li>
+                  <li><a href="#" class="c">RTV, AGD</a></li>
+                  <li><a href="#" class="c">Budowa i Remont</a></li>
+                  <li><a href="#" class="c">Pneumatyka</a></li>
+                </ul>
+              </div>
+              <div class="c-more">
+                Więcej
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="nav-item">Producenci</a></li>
+          <li><a href="#" class="nav-item">Promocje</a></li>
+          <li><a href="#" class="nav-item">Nowości</a></li>
+          <li><a href="#" class="nav-item">Outlet</a></li>
+          <li><a href="#" class="nav-item">Porady</a></li>
+          <li><a href="#" class="nav-item">Konfiguratory</a></li>
+          <li><a href="#" class="nav-item">Strefa porad</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="colm sbtw m">
+      <!-- [] -->
+    </main>
+    <footer class="footer">
+      <div class="f-row f-menu">
+        <div class="colm sbtw">
+          <div class="f-col">
+            <h4>Przydatne linki</h4>
+            <ul class="f-list">
+              <li><a href="#">Regulamin</a></li>
+              <li><a href="#">Płatności</a></li>
+              <li><a href="#">Reklamacje i zwroty</a></li>
+              <li><a href="#">Polityka prywatności</a></li>
+              <li><a href="#">Polityka cookies</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4></h4>
+            <ul class="f-list">
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Shop.pl</h4>
+            <ul class="f-list">
+              <li><a href="#">O nas</a></li>
+              <li><a href="#">Dane firmy i numer konta</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Regulamin sklepu</a></li>
+              <li><a href="#">Strefa porad</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Informacje</h4>
+            <ul class="f-list">
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Logistyka</a></li>
+              <li><a href="#">Płatności</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="f-row f-logos">
+        <div class="colm sbtw f-logos-c">
+          <div class="logistics">
+            <h3>Logistyka</h3>
+            <div class="f-logos-box">
+              <img src="assets/images/img_dpd.png" alt="DPD">
+              <img src="assets/images/img_gls.png" alt="GLS">
+              <img src="assets/images/img_raben.png" alt="Raben">
+            </div>
+          </div>
+          <div class="payments">
+            <h3>Płatności</h3>
+            <div class="f-logos-box">
+              <img src="assets/images/img_blik.png" alt="Blik">
+              <img src="assets/images/img_mastercard.png" alt="MasterCard">
+              <img src="assets/images/img_przelewy24.png" alt="Przelewy24">
+              <img src="assets/images/img_visa.png" alt="Visa">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="f-row copyright">
+        Copyright &copy <a href="#">Shop.pl</a> | Wszelkie prawa zastrzeżone!
+      </div>
+    </footer>
+  </body>
+</html>

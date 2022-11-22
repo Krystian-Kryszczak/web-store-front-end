@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Store</title>
+    <link rel="stylesheet" href="assets/css/variables.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/search.css"/>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <!-- Glide.js CDN -->
+    <link rel="stylesheet" href="assets/css/glide.core.css"/> <!-- https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css -->
+    <link rel="stylesheet" href="assets/css/glide.theme.min.css"/> <!-- https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css -->
+    <script src="assets/javascript/glide.js" type="text/javascript"></script> <!-- https://cdn.jsdelivr.net/npm/@glidejs/glide -->
+    <script src="assets/javascript/script.js" type="text/javascript" defer></script>
+    <script src="assets/javascript/search.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!--<div class="colm info">
+      <p>Ze względu na zbilżające się święta zamówienia przewidujemy opóźnienia w realizacji zamówień.</p>
+      <i class="info-close fas fa-times"></i>
+      <script src="assets/javascript/info.js" type="text/javascript"></script>
+    </div>-->
+    <header class="header">
+      <div class="h-container">
+        <div class="row align-items-center sbtw">
+          <button class="nav-btn" type="button">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="col h-logo">
+            <a href="/">
+              <img src="assets/images/logo.jpeg" alt="LOGO">
+            </a>
+          </div>
+          <div class="col h-content">
+            <div class="h-row">
+              <div class="h-quick-search">
+                <form action="" method="POST" name="quick_search" class="h-quick-search-box">
+                  <div class="search-container">
+                    <input type="text" name="search" class="form-control quick-search-autocomplete" value="" autocomplete="off" placeholder="Szukaj w ofercie 300 tysięcy produktów"/>
+                    <div class="h-quick-search-dropdown">
+                      <div class="md-top">
+                        <select class="dropdown-native-select form-control" name="elem_id">
+                          <option value="0" selected="selected">Wszystkie działy</option>
+                          <option value="1">Przewody</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary h-quick-search-submit"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="h-controls">
+                <div class="h-control-row">
+                  <a href="#" class="h-control h-clipboard-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-folder h-icon"></i><span>Schowek</span>
+                    </div>
+                  </a>
+                  <a href="#" class="h-control h-user-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-user h-icon"></i><span>Zaloguj się</span>
+                    </div>
+                  </a>
+                  <a href="#" class="h-control h-basket-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-shopping-cart h-icon"></i><span>0,00 zł</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <header class="nav-header">
+        <h3>MENU</h3>
+        <button class="nav-btn" type="button">
+          <span></span><span></span>
+        </button>
+      </header>
+      <div class="colm flex-start nav-content">
+        <ul class="nav-list">
+          <li class="nav-li-c-item"><a href="#" class="nav-item">Kategorie</a></li>
+          <li><a href="#" class="nav-item">Producenci</a></li>
+          <li><a href="#" class="nav-item">Promocje</a></li>
+          <li><a href="#" class="nav-item">Nowości</a></li>
+          <li><a href="#" class="nav-item">Outlet</a></li>
+          <li><a href="#" class="nav-item">Porady</a></li>
+          <li><a href="#" class="nav-item">Konfiguratory</a></li>
+          <li><a href="#" class="nav-item">Strefa porad</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="colm search-result">
+      <aside class="side-bar">
+        <section>
+          <h3 class="sb-header">Kategorie</h3>
+          <div class="sb-box">
+            <div class="sb-categories-container">
+              <ul class="sb-categories"> <!-- categories -->
+                <li class="sb-c-li">
+                  <input type="checkbox">
+                  <a href="#">Category0</a>
+                  <ol class="sb-subcategories"> <!-- subcategories -->
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub0</a>
+                      <ul class="d-subcategories"> <!-- double subcategories -->
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub1</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub2</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub3</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+                <li class="sb-c-li">
+                  <input type="checkbox" name="">
+                  <a href="#">Category1</a>
+                  <ol class="sb-subcategories"> <!-- subcategories -->
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub0</a>
+                      <ul class="d-subcategories"> <!-- double subcategories -->
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub1</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub2</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub3</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+                <li class="sb-c-li">
+                  <input type="checkbox" name="">
+                  <a href="#">Category2</a>
+                  <ol class="sb-subcategories"> <!-- subcategories -->
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub0</a>
+                      <ul class="d-subcategories"> <!-- double subcategories -->
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub1</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub2</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub3</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+                <li class="sb-c-li">
+                  <input type="checkbox" name="">
+                  <a href="#">Category3</a>
+                  <ol class="sb-subcategories"> <!-- subcategories -->
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub0</a>
+                      <ul class="d-subcategories"> <!-- double subcategories -->
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub1</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub2</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub3</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+                <li class="sb-c-li">
+                  <input type="checkbox" name="">
+                  <a href="#">Category4</a>
+                  <ol class="sb-subcategories"> <!-- subcategories -->
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub0</a>
+                      <ul class="d-subcategories"> <!-- double subcategories -->
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub1</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub2</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub3</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+                <li class="sb-c-li">
+                  <input type="checkbox" name="">
+                  <a href="#">Category5</a>
+                  <ol class="sb-subcategories"> <!-- subcategories -->
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub0</a>
+                      <ul class="d-subcategories"> <!-- double subcategories -->
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub1</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub2</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                    <li class="sb-sc-li">
+                      <input type="checkbox">
+                      <a href="#">sub3</a>
+                      <ul class="d-subcategories">
+                        <li class="sb-dsc-li">dsub0</li>
+                        <li class="sb-dsc-li">dsub1</li>
+                        <li class="sb-dsc-li">dsub2</li>
+                        <li class="sb-dsc-li">dsub3</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3 class="sb-header">Filtry</h3>
+          <div class="sb-box">
+            <h4 class="sbb-header">Cena</h4><br>
+            Cena minimalna: <input type="number" value="0" id="prince-min"><br>
+            Cena maksymalna: <input type="number" value="1000" id="prince-max">
+          </div>
+          <div class="sb-box">
+            <h4 class="sbb-header">Producent</h4><br>
+            <ul class="checklist">
+              <li class="chl-item"><input type="checkbox" value="BELDEN">BELDEN</li>
+              <li class="chl-item"><input type="checkbox" value="BITNER">BITNER</li>
+              <li class="chl-item"><input type="checkbox" value="BLOW">BLOW</li>
+              <li class="chl-item"><input type="checkbox" value="DAMIR">DAMIR</li>
+              <li class="chl-item"><input type="checkbox" value="DRAKA">DRAKA</li>
+              <li class="chl-item"><input type="checkbox" value="ELEKTROKABEL">ELEKTROKABEL</li>
+              <li class="chl-item"><input type="checkbox" value="ELEKTRO-PLAST OPATÓWEK">ELEKTRO-PLAST OPATÓWEK</li>
+              <li class="chl-item"><input type="checkbox" value="ELGOTECH">ELGOTECH</li>
+              <li class="chl-item"><input type="checkbox" value="ELPAR">ELPAR</li>
+              <li class="chl-item"><input type="checkbox" value="ELTRIM KABLE">ELTRIM KABLE</li>
+            </ul>
+          </div>
+          <div class="sb-box">
+            <h4 class="sbb-header">Seria produktu</h4><br>
+            <ul class="checklist">
+              <li class="chl-item"><input type="checkbox" value="0">Example 0</li>
+              <li class="chl-item"><input type="checkbox" value="1">Example 1</li>
+              <li class="chl-item"><input type="checkbox" value="2">Example 2</li>
+              <li class="chl-item"><input type="checkbox" value="3">Example 3</li>
+              <li class="chl-item"><input type="checkbox" value="4">Example 4</li>
+              <li class="chl-item"><input type="checkbox" value="5">Example 5</li>
+              <li class="chl-item"><input type="checkbox" value="6">Example 6</li>
+              <li class="chl-item"><input type="checkbox" value="7">Example 7</li>
+              <li class="chl-item"><input type="checkbox" value="8">Example 8</li>
+              <li class="chl-item"><input type="checkbox" value="9">Example 9</li>
+            </ul>
+          </div>
+          <div class="sb-box">
+            <h4 class="sbb-header">Dostępność u dostawcy</h4><br>
+            <ul class="checklist">
+              <li class="chl-item"><input type="checkbox" value="0">Example 0</li>
+              <li class="chl-item"><input type="checkbox" value="1">Example 1</li>
+              <li class="chl-item"><input type="checkbox" value="2">Example 2</li>
+              <li class="chl-item"><input type="checkbox" value="3">Example 3</li>
+              <li class="chl-item"><input type="checkbox" value="4">Example 4</li>
+              <li class="chl-item"><input type="checkbox" value="5">Example 5</li>
+              <li class="chl-item"><input type="checkbox" value="6">Example 6</li>
+              <li class="chl-item"><input type="checkbox" value="7">Example 7</li>
+              <li class="chl-item"><input type="checkbox" value="8">Example 8</li>
+              <li class="chl-item"><input type="checkbox" value="9">Example 9</li>
+            </ul>
+          </div>
+          <div class="sb-box">
+            <h4 class="sbb-header">Znamionowy przekrój żyły [mm2]</h4><br>
+            <ul class="checklist">
+              <li class="chl-item"><input type="checkbox" value="0">Example 0</li>
+              <li class="chl-item"><input type="checkbox" value="1">Example 1</li>
+              <li class="chl-item"><input type="checkbox" value="2">Example 2</li>
+              <li class="chl-item"><input type="checkbox" value="3">Example 3</li>
+              <li class="chl-item"><input type="checkbox" value="4">Example 4</li>
+              <li class="chl-item"><input type="checkbox" value="5">Example 5</li>
+              <li class="chl-item"><input type="checkbox" value="6">Example 6</li>
+              <li class="chl-item"><input type="checkbox" value="7">Example 7</li>
+              <li class="chl-item"><input type="checkbox" value="8">Example 8</li>
+              <li class="chl-item"><input type="checkbox" value="9">Example 9</li>
+            </ul>
+          </div>
+          <div class="sb-box">
+            <h4 class="sbb-header">Liczba żył</h4><br>
+            <ul class="checklist">
+              <li class="chl-item"><input type="checkbox" value="0">Example 0</li>
+              <li class="chl-item"><input type="checkbox" value="1">Example 1</li>
+              <li class="chl-item"><input type="checkbox" value="2">Example 2</li>
+              <li class="chl-item"><input type="checkbox" value="3">Example 3</li>
+              <li class="chl-item"><input type="checkbox" value="4">Example 4</li>
+              <li class="chl-item"><input type="checkbox" value="5">Example 5</li>
+              <li class="chl-item"><input type="checkbox" value="6">Example 6</li>
+              <li class="chl-item"><input type="checkbox" value="7">Example 7</li>
+              <li class="chl-item"><input type="checkbox" value="8">Example 8</li>
+              <li class="chl-item"><input type="checkbox" value="9">Example 9</li>
+            </ul>
+          </div>
+          <div class="sb-box">
+            <h4 class="sbb-header">Kolor izolacji</h4><br>
+            <ul class="checklist">
+              <li class="chl-item"><input type="checkbox" value="0">Example 0</li>
+              <li class="chl-item"><input type="checkbox" value="1">Example 1</li>
+              <li class="chl-item"><input type="checkbox" value="2">Example 2</li>
+              <li class="chl-item"><input type="checkbox" value="3">Example 3</li>
+              <li class="chl-item"><input type="checkbox" value="4">Example 4</li>
+              <li class="chl-item"><input type="checkbox" value="5">Example 5</li>
+              <li class="chl-item"><input type="checkbox" value="6">Example 6</li>
+              <li class="chl-item"><input type="checkbox" value="7">Example 7</li>
+              <li class="chl-item"><input type="checkbox" value="8">Example 8</li>
+              <li class="chl-item"><input type="checkbox" value="9">Example 9</li>
+            </ul>
+          </div>
+          <div class="sb-box">
+            <h4 class="sbb-header">Napięcie znamionowe U [V]</h4><br>
+            <ul class="checklist">
+              <li class="chl-item"><input type="checkbox" value="0">Example 0</li>
+              <li class="chl-item"><input type="checkbox" value="1">Example 1</li>
+              <li class="chl-item"><input type="checkbox" value="2">Example 2</li>
+              <li class="chl-item"><input type="checkbox" value="3">Example 3</li>
+              <li class="chl-item"><input type="checkbox" value="4">Example 4</li>
+              <li class="chl-item"><input type="checkbox" value="5">Example 5</li>
+              <li class="chl-item"><input type="checkbox" value="6">Example 6</li>
+              <li class="chl-item"><input type="checkbox" value="7">Example 7</li>
+              <li class="chl-item"><input type="checkbox" value="8">Example 8</li>
+              <li class="chl-item"><input type="checkbox" value="9">Example 9</li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+      <div class="content-container">
+        <div class="search-info">Znaleziono <b>3500</b> produktów dla frazy: "<b>przewód</b>"</div>
+        <div class="products-category">
+          <div class="header">Wybierz jedną z poniższych kategorii, aby otrzymać bardziej precyzyje wyniki</div>
+          <div class="body">
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+            <a href="#" class="category">
+              <img src="assets/images/kable-i-przewody.jpeg" class="img" alt="produkt">
+              <span>Kable i przewody</span>
+              <p>(3367)</p>
+            </a>
+          </div>
+          <button type="button" class="show-more">pokaż więcej kategori <i class="fas fa-arrow-down"></i></i></button>
+        </div>
+        <div class="products-sorting">
+          <div class="choice-amount">
+            <select class="select">
+              <option value="12">12</option>
+              <option value="24">24</option>
+              <option value="36">36</option>
+            </select>
+          </div>
+          <div class="sorting">
+            <div class="choice-order-by">
+              <select class="select choices">
+                <option value="default">Sortowanie domyślne</option>
+                <option value="prince-asc">Cena - od najniższej</option>
+                <option value="prince-desc">Cena - od najwyższej</option>
+                <option value="popular">Po popularności</option>
+                <option value="rating">Po ocenach klientów</option>
+                <option value="comments">Po ilości komentarzy</option>
+                <!-- [] -->
+                <option value="default">Sortuj: sortuj domyślnie</option>
+                <option value="anvilable-desc">Sortuj: dostępność od najwyższej</option>
+                <option value="anvilable-asc">Sortuj: dostępność od najniższej</option>
+                <option value="name-AZ">Sortuj: nazwa od A do Z</option>
+                <option value="name-ZA">Sortuj: nazwa od Z do A</option>
+                <option value="manufacturer-AZ">Sortuj: producent od A do Z</option>
+                <option value="manufacturer-ZA">Sortuj: producent od Z do A</option>
+                <option value="prince-asc">Sortuj: cena od najniższej</option>
+                <option value="prince-desc">Sortuj: cena od najwyższej</option>
+              </select>
+            </div>
+            <div class="s-pagination">
+              <a href="#"><i class="fas fa-chevron-left"></i></a>
+              <input type="number" value="1" min="1">
+              <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="products"> <!-- Produkty -->
+          <div class="product">
+            <h3 class="product-header"><a href="#">Przewód YDYp 3x2,5 żo 450/750V /100m/</a></h3>
+            <div class="product-info">
+              <div class="product-img">
+                <img src="assets/images/przewód.jpeg" alt="produkt">
+              </div>
+              <div class="product-details">
+                <span class="product-detail">Producent: <p>DAMIR</p></span>
+                <span class="product-detail">Index producenta: <p>YDYp_3x2,5_750_100</p></span>
+                <span class="product-detail">Kategoria: <p>Wielożyłowe płaskie</p></span>
+                <span class="product-detail">Ocena: <p>4.1/5</p></span>
+                <button class="product-technical-btn">Dane techniczne</button>
+                <div class="product-technical-data">
+                  <span class="data"><p>Kolor izolacji</p> Biały</span>
+                  <span class="data"><p>Żyła ochronna</p> Tak</span>
+                  <span class="data"><p>Materiał powłoki zewnętrznej</p> PVC</span>
+                  <span class="data"><p>Bezhalogenowy EN 50267-2-2</p> Nie</span>
+                  <span class="data"><p>Nierozprzestrzeniający płomienia</p> Zgodnie z EN 60332-1-2</span>
+                  <span class="data"><p>Niska emisja dymów (zgodnie z EN 61034-2)</p> Nie</span>
+                  <span class="data"><p>Olejoodporne (zgodnie z EN 60811-2-1)</p> Nie</span>
+                  <span class="data"><p>Izolacja żyły</p> PVC</span>
+                  <span class="data"><p>Napięcie znamionowe U0 [V]</p> 450</span>
+                  <span class="data"><p>Napięcie znamionowe U [V]</p> 750</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] od</p> -40</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] do</p> 70</span>
+                  <span class="data"><p>Przybliżona waga kabla [kg/km]</p> 140</span>
+                  <span class="data"><p>Ekran</p> Nie</span>
+                  <span class="data"><p>Szerokość przewodu ok.. [mm]</p> 6.7000</span>
+                  <span class="data"><p>Identyfikacja żył</p> Kolor</span>
+                  <span class="data"><p>Wysokość przewodu około [mm]</p>14.1000</span>
+                  <span class="data"><p>Liczba żył</p> 3</span>
+                  <span class="data"><p>Klasa żyły</p> Klasa 1 = jednodrutowy</span>
+                  <span class="data"><p>Znamionowy przekrój żyły [mm2]</p> 2.5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-order">
+              <div class="product-prince">
+                <span>Twoja cena:</span><p>200,00zł</p><span>brutto</span>
+              </div>
+              <div class="product-stats-info">
+                <div class="info-product-amount"><i class="fas fa-boxes"></i>40 krążków</div>
+                <div class="info-delivery-time"><i class="fas fa-truck-loading"></i>Wysyłka w 24h</div>
+              </div>
+              <div class="product-stats-tools">
+                <button class="tools-btn"><i class="fas fa-balance-scale-left"></i> Powrównaj</button>
+                <button class="tools-btn"><i class="fas fa-clipboard"></i> Dodaj do schowka</button>
+              </div>
+              <div class="product-buy">
+                <div class="product-buy-amount">
+                  <input type="number" value="1" min="1" class="product-buy-input">
+                  <span>krążek</span>
+                </div>
+                <button class="product-buy-btn">Dodaj do koszyka <i class="fas fa-cart-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-header"><a href="#">Przewód YDYp 3x2,5 żo 450/750V /100m/</a></h3>
+            <div class="product-info">
+              <div class="product-img">
+                <img src="assets/images/przewód.jpeg" alt="produkt">
+              </div>
+              <div class="product-details">
+                <span class="product-detail">Producent: <p>DAMIR</p></span>
+                <span class="product-detail">Index producenta: <p>YDYp_3x2,5_750_100</p></span>
+                <span class="product-detail">Kategoria: <p>Wielożyłowe płaskie</p></span>
+                <span class="product-detail">Ocena: <p>4.1/5</p></span>
+                <button class="product-technical-btn">Dane techniczne</button>
+                <div class="product-technical-data">
+                  <span class="data"><p>Kolor izolacji</p> Biały</span>
+                  <span class="data"><p>Żyła ochronna</p> Tak</span>
+                  <span class="data"><p>Materiał powłoki zewnętrznej</p> PVC</span>
+                  <span class="data"><p>Bezhalogenowy EN 50267-2-2</p> Nie</span>
+                  <span class="data"><p>Nierozprzestrzeniający płomienia</p> Zgodnie z EN 60332-1-2</span>
+                  <span class="data"><p>Niska emisja dymów (zgodnie z EN 61034-2)</p> Nie</span>
+                  <span class="data"><p>Olejoodporne (zgodnie z EN 60811-2-1)</p> Nie</span>
+                  <span class="data"><p>Izolacja żyły</p> PVC</span>
+                  <span class="data"><p>Napięcie znamionowe U0 [V]</p> 450</span>
+                  <span class="data"><p>Napięcie znamionowe U [V]</p> 750</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] od</p> -40</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] do</p> 70</span>
+                  <span class="data"><p>Przybliżona waga kabla [kg/km]</p> 140</span>
+                  <span class="data"><p>Ekran</p> Nie</span>
+                  <span class="data"><p>Szerokość przewodu ok.. [mm]</p> 6.7000</span>
+                  <span class="data"><p>Identyfikacja żył</p> Kolor</span>
+                  <span class="data"><p>Wysokość przewodu około [mm]</p>14.1000</span>
+                  <span class="data"><p>Liczba żył</p> 3</span>
+                  <span class="data"><p>Klasa żyły</p> Klasa 1 = jednodrutowy</span>
+                  <span class="data"><p>Znamionowy przekrój żyły [mm2]</p> 2.5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-order">
+              <div class="product-prince">
+                <span>Twoja cena:</span><p>200,00zł</p><span>brutto</span>
+              </div>
+              <div class="product-stats-info">
+                <div class="info-product-amount"><i class="fas fa-boxes"></i>40 krążków</div>
+                <div class="info-delivery-time"><i class="fas fa-truck-loading"></i>Wysyłka w 24h</div>
+              </div>
+              <div class="product-stats-tools">
+                <button class="tools-btn"><i class="fas fa-balance-scale-left"></i> Powrównaj</button>
+                <button class="tools-btn"><i class="fas fa-clipboard"></i> Dodaj do schowka</button>
+              </div>
+              <div class="product-buy">
+                <div class="product-buy-amount">
+                  <input type="number" value="1" min="1" class="product-buy-input">
+                  <span>krążek</span>
+                </div>
+                <button class="product-buy-btn">Dodaj do koszyka <i class="fas fa-cart-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-header"><a href="#">Przewód YDYp 3x2,5 żo 450/750V /100m/</a></h3>
+            <div class="product-info">
+              <div class="product-img">
+                <img src="assets/images/przewód.jpeg" alt="produkt">
+              </div>
+              <div class="product-details">
+                <span class="product-detail">Producent: <p>DAMIR</p></span>
+                <span class="product-detail">Index producenta: <p>YDYp_3x2,5_750_100</p></span>
+                <span class="product-detail">Kategoria: <p>Wielożyłowe płaskie</p></span>
+                <span class="product-detail">Ocena: <p>4.1/5</p></span>
+                <button class="product-technical-btn">Dane techniczne</button>
+                <div class="product-technical-data">
+                  <span class="data"><p>Kolor izolacji</p> Biały</span>
+                  <span class="data"><p>Żyła ochronna</p> Tak</span>
+                  <span class="data"><p>Materiał powłoki zewnętrznej</p> PVC</span>
+                  <span class="data"><p>Bezhalogenowy EN 50267-2-2</p> Nie</span>
+                  <span class="data"><p>Nierozprzestrzeniający płomienia</p> Zgodnie z EN 60332-1-2</span>
+                  <span class="data"><p>Niska emisja dymów (zgodnie z EN 61034-2)</p> Nie</span>
+                  <span class="data"><p>Olejoodporne (zgodnie z EN 60811-2-1)</p> Nie</span>
+                  <span class="data"><p>Izolacja żyły</p> PVC</span>
+                  <span class="data"><p>Napięcie znamionowe U0 [V]</p> 450</span>
+                  <span class="data"><p>Napięcie znamionowe U [V]</p> 750</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] od</p> -40</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] do</p> 70</span>
+                  <span class="data"><p>Przybliżona waga kabla [kg/km]</p> 140</span>
+                  <span class="data"><p>Ekran</p> Nie</span>
+                  <span class="data"><p>Szerokość przewodu ok.. [mm]</p> 6.7000</span>
+                  <span class="data"><p>Identyfikacja żył</p> Kolor</span>
+                  <span class="data"><p>Wysokość przewodu około [mm]</p>14.1000</span>
+                  <span class="data"><p>Liczba żył</p> 3</span>
+                  <span class="data"><p>Klasa żyły</p> Klasa 1 = jednodrutowy</span>
+                  <span class="data"><p>Znamionowy przekrój żyły [mm2]</p> 2.5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-order">
+              <div class="product-prince">
+                <span>Twoja cena:</span><p>200,00zł</p><span>brutto</span>
+              </div>
+              <div class="product-stats-info">
+                <div class="info-product-amount"><i class="fas fa-boxes"></i>40 krążków</div>
+                <div class="info-delivery-time"><i class="fas fa-truck-loading"></i>Wysyłka w 24h</div>
+              </div>
+              <div class="product-stats-tools">
+                <button class="tools-btn"><i class="fas fa-balance-scale-left"></i> Powrównaj</button>
+                <button class="tools-btn"><i class="fas fa-clipboard"></i> Dodaj do schowka</button>
+              </div>
+              <div class="product-buy">
+                <div class="product-buy-amount">
+                  <input type="number" value="1" min="1" class="product-buy-input">
+                  <span>krążek</span>
+                </div>
+                <button class="product-buy-btn">Dodaj do koszyka <i class="fas fa-cart-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-header"><a href="#">Przewód YDYp 3x2,5 żo 450/750V /100m/</a></h3>
+            <div class="product-info">
+              <div class="product-img">
+                <img src="assets/images/przewód.jpeg" alt="produkt">
+              </div>
+              <div class="product-details">
+                <span class="product-detail">Producent: <p>DAMIR</p></span>
+                <span class="product-detail">Index producenta: <p>YDYp_3x2,5_750_100</p></span>
+                <span class="product-detail">Kategoria: <p>Wielożyłowe płaskie</p></span>
+                <span class="product-detail">Ocena: <p>4.1/5</p></span>
+                <button class="product-technical-btn">Dane techniczne</button>
+                <div class="product-technical-data">
+                  <span class="data"><p>Kolor izolacji</p> Biały</span>
+                  <span class="data"><p>Żyła ochronna</p> Tak</span>
+                  <span class="data"><p>Materiał powłoki zewnętrznej</p> PVC</span>
+                  <span class="data"><p>Bezhalogenowy EN 50267-2-2</p> Nie</span>
+                  <span class="data"><p>Nierozprzestrzeniający płomienia</p> Zgodnie z EN 60332-1-2</span>
+                  <span class="data"><p>Niska emisja dymów (zgodnie z EN 61034-2)</p> Nie</span>
+                  <span class="data"><p>Olejoodporne (zgodnie z EN 60811-2-1)</p> Nie</span>
+                  <span class="data"><p>Izolacja żyły</p> PVC</span>
+                  <span class="data"><p>Napięcie znamionowe U0 [V]</p> 450</span>
+                  <span class="data"><p>Napięcie znamionowe U [V]</p> 750</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] od</p> -40</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] do</p> 70</span>
+                  <span class="data"><p>Przybliżona waga kabla [kg/km]</p> 140</span>
+                  <span class="data"><p>Ekran</p> Nie</span>
+                  <span class="data"><p>Szerokość przewodu ok.. [mm]</p> 6.7000</span>
+                  <span class="data"><p>Identyfikacja żył</p> Kolor</span>
+                  <span class="data"><p>Wysokość przewodu około [mm]</p>14.1000</span>
+                  <span class="data"><p>Liczba żył</p> 3</span>
+                  <span class="data"><p>Klasa żyły</p> Klasa 1 = jednodrutowy</span>
+                  <span class="data"><p>Znamionowy przekrój żyły [mm2]</p> 2.5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-order">
+              <div class="product-prince">
+                <span>Twoja cena:</span><p>200,00zł</p><span>brutto</span>
+              </div>
+              <div class="product-stats-info">
+                <div class="info-product-amount"><i class="fas fa-boxes"></i>40 krążków</div>
+                <div class="info-delivery-time"><i class="fas fa-truck-loading"></i>Wysyłka w 24h</div>
+              </div>
+              <div class="product-stats-tools">
+                <button class="tools-btn"><i class="fas fa-balance-scale-left"></i> Powrównaj</button>
+                <button class="tools-btn"><i class="fas fa-clipboard"></i> Dodaj do schowka</button>
+              </div>
+              <div class="product-buy">
+                <div class="product-buy-amount">
+                  <input type="number" value="1" min="1" class="product-buy-input">
+                  <span>krążek</span>
+                </div>
+                <button class="product-buy-btn">Dodaj do koszyka <i class="fas fa-cart-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-header"><a href="#">Przewód YDYp 3x2,5 żo 450/750V /100m/</a></h3>
+            <div class="product-info">
+              <div class="product-img">
+                <img src="assets/images/przewód.jpeg" alt="produkt">
+              </div>
+              <div class="product-details">
+                <span class="product-detail">Producent: <p>DAMIR</p></span>
+                <span class="product-detail">Index producenta: <p>YDYp_3x2,5_750_100</p></span>
+                <span class="product-detail">Kategoria: <p>Wielożyłowe płaskie</p></span>
+                <span class="product-detail">Ocena: <p>4.1/5</p></span>
+                <button class="product-technical-btn">Dane techniczne</button>
+                <div class="product-technical-data">
+                  <span class="data"><p>Kolor izolacji</p> Biały</span>
+                  <span class="data"><p>Żyła ochronna</p> Tak</span>
+                  <span class="data"><p>Materiał powłoki zewnętrznej</p> PVC</span>
+                  <span class="data"><p>Bezhalogenowy EN 50267-2-2</p> Nie</span>
+                  <span class="data"><p>Nierozprzestrzeniający płomienia</p> Zgodnie z EN 60332-1-2</span>
+                  <span class="data"><p>Niska emisja dymów (zgodnie z EN 61034-2)</p> Nie</span>
+                  <span class="data"><p>Olejoodporne (zgodnie z EN 60811-2-1)</p> Nie</span>
+                  <span class="data"><p>Izolacja żyły</p> PVC</span>
+                  <span class="data"><p>Napięcie znamionowe U0 [V]</p> 450</span>
+                  <span class="data"><p>Napięcie znamionowe U [V]</p> 750</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] od</p> -40</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] do</p> 70</span>
+                  <span class="data"><p>Przybliżona waga kabla [kg/km]</p> 140</span>
+                  <span class="data"><p>Ekran</p> Nie</span>
+                  <span class="data"><p>Szerokość przewodu ok.. [mm]</p> 6.7000</span>
+                  <span class="data"><p>Identyfikacja żył</p> Kolor</span>
+                  <span class="data"><p>Wysokość przewodu około [mm]</p>14.1000</span>
+                  <span class="data"><p>Liczba żył</p> 3</span>
+                  <span class="data"><p>Klasa żyły</p> Klasa 1 = jednodrutowy</span>
+                  <span class="data"><p>Znamionowy przekrój żyły [mm2]</p> 2.5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-order">
+              <div class="product-prince">
+                <span>Twoja cena:</span><p>200,00zł</p><span>brutto</span>
+              </div>
+              <div class="product-stats-info">
+                <div class="info-product-amount"><i class="fas fa-boxes"></i>40 krążków</div>
+                <div class="info-delivery-time"><i class="fas fa-truck-loading"></i>Wysyłka w 24h</div>
+              </div>
+              <div class="product-stats-tools">
+                <button class="tools-btn"><i class="fas fa-balance-scale-left"></i> Powrównaj</button>
+                <button class="tools-btn"><i class="fas fa-clipboard"></i> Dodaj do schowka</button>
+              </div>
+              <div class="product-buy">
+                <div class="product-buy-amount">
+                  <input type="number" value="1" min="1" class="product-buy-input">
+                  <span>krążek</span>
+                </div>
+                <button class="product-buy-btn">Dodaj do koszyka <i class="fas fa-cart-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-header"><a href="#">Przewód YDYp 3x2,5 żo 450/750V /100m/</a></h3>
+            <div class="product-info">
+              <div class="product-img">
+                <img src="assets/images/przewód.jpeg" alt="produkt">
+              </div>
+              <div class="product-details">
+                <span class="product-detail">Producent: <p>DAMIR</p></span>
+                <span class="product-detail">Index producenta: <p>YDYp_3x2,5_750_100</p></span>
+                <span class="product-detail">Kategoria: <p>Wielożyłowe płaskie</p></span>
+                <span class="product-detail">Ocena: <p>4.1/5</p></span>
+                <button class="product-technical-btn">Dane techniczne</button>
+                <div class="product-technical-data">
+                  <span class="data"><p>Kolor izolacji</p> Biały</span>
+                  <span class="data"><p>Żyła ochronna</p> Tak</span>
+                  <span class="data"><p>Materiał powłoki zewnętrznej</p> PVC</span>
+                  <span class="data"><p>Bezhalogenowy EN 50267-2-2</p> Nie</span>
+                  <span class="data"><p>Nierozprzestrzeniający płomienia</p> Zgodnie z EN 60332-1-2</span>
+                  <span class="data"><p>Niska emisja dymów (zgodnie z EN 61034-2)</p> Nie</span>
+                  <span class="data"><p>Olejoodporne (zgodnie z EN 60811-2-1)</p> Nie</span>
+                  <span class="data"><p>Izolacja żyły</p> PVC</span>
+                  <span class="data"><p>Napięcie znamionowe U0 [V]</p> 450</span>
+                  <span class="data"><p>Napięcie znamionowe U [V]</p> 750</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] od</p> -40</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] do</p> 70</span>
+                  <span class="data"><p>Przybliżona waga kabla [kg/km]</p> 140</span>
+                  <span class="data"><p>Ekran</p> Nie</span>
+                  <span class="data"><p>Szerokość przewodu ok.. [mm]</p> 6.7000</span>
+                  <span class="data"><p>Identyfikacja żył</p> Kolor</span>
+                  <span class="data"><p>Wysokość przewodu około [mm]</p>14.1000</span>
+                  <span class="data"><p>Liczba żył</p> 3</span>
+                  <span class="data"><p>Klasa żyły</p> Klasa 1 = jednodrutowy</span>
+                  <span class="data"><p>Znamionowy przekrój żyły [mm2]</p> 2.5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-order">
+              <div class="product-prince">
+                <span>Twoja cena:</span><p>200,00zł</p><span>brutto</span>
+              </div>
+              <div class="product-stats-info">
+                <div class="info-product-amount"><i class="fas fa-boxes"></i>40 krążków</div>
+                <div class="info-delivery-time"><i class="fas fa-truck-loading"></i>Wysyłka w 24h</div>
+              </div>
+              <div class="product-stats-tools">
+                <button class="tools-btn"><i class="fas fa-balance-scale-left"></i> Powrównaj</button>
+                <button class="tools-btn"><i class="fas fa-clipboard"></i> Dodaj do schowka</button>
+              </div>
+              <div class="product-buy">
+                <div class="product-buy-amount">
+                  <input type="number" value="1" min="1" class="product-buy-input">
+                  <span>krążek</span>
+                </div>
+                <button class="product-buy-btn">Dodaj do koszyka <i class="fas fa-cart-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-header"><a href="#">Przewód YDYp 3x2,5 żo 450/750V /100m/</a></h3>
+            <div class="product-info">
+              <div class="product-img">
+                <img src="assets/images/przewód.jpeg" alt="produkt">
+              </div>
+              <div class="product-details">
+                <span class="product-detail">Producent: <p>DAMIR</p></span>
+                <span class="product-detail">Index producenta: <p>YDYp_3x2,5_750_100</p></span>
+                <span class="product-detail">Kategoria: <p>Wielożyłowe płaskie</p></span>
+                <span class="product-detail">Ocena: <p>4.1/5</p></span>
+                <button class="product-technical-btn">Dane techniczne</button>
+                <div class="product-technical-data">
+                  <span class="data"><p>Kolor izolacji</p> Biały</span>
+                  <span class="data"><p>Żyła ochronna</p> Tak</span>
+                  <span class="data"><p>Materiał powłoki zewnętrznej</p> PVC</span>
+                  <span class="data"><p>Bezhalogenowy EN 50267-2-2</p> Nie</span>
+                  <span class="data"><p>Nierozprzestrzeniający płomienia</p> Zgodnie z EN 60332-1-2</span>
+                  <span class="data"><p>Niska emisja dymów (zgodnie z EN 61034-2)</p> Nie</span>
+                  <span class="data"><p>Olejoodporne (zgodnie z EN 60811-2-1)</p> Nie</span>
+                  <span class="data"><p>Izolacja żyły</p> PVC</span>
+                  <span class="data"><p>Napięcie znamionowe U0 [V]</p> 450</span>
+                  <span class="data"><p>Napięcie znamionowe U [V]</p> 750</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] od</p> -40</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] do</p> 70</span>
+                  <span class="data"><p>Przybliżona waga kabla [kg/km]</p> 140</span>
+                  <span class="data"><p>Ekran</p> Nie</span>
+                  <span class="data"><p>Szerokość przewodu ok.. [mm]</p> 6.7000</span>
+                  <span class="data"><p>Identyfikacja żył</p> Kolor</span>
+                  <span class="data"><p>Wysokość przewodu około [mm]</p>14.1000</span>
+                  <span class="data"><p>Liczba żył</p> 3</span>
+                  <span class="data"><p>Klasa żyły</p> Klasa 1 = jednodrutowy</span>
+                  <span class="data"><p>Znamionowy przekrój żyły [mm2]</p> 2.5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-order">
+              <div class="product-prince">
+                <span>Twoja cena:</span><p>200,00zł</p><span>brutto</span>
+              </div>
+              <div class="product-stats-info">
+                <div class="info-product-amount"><i class="fas fa-boxes"></i>40 krążków</div>
+                <div class="info-delivery-time"><i class="fas fa-truck-loading"></i>Wysyłka w 24h</div>
+              </div>
+              <div class="product-stats-tools">
+                <button class="tools-btn"><i class="fas fa-balance-scale-left"></i> Powrównaj</button>
+                <button class="tools-btn"><i class="fas fa-clipboard"></i> Dodaj do schowka</button>
+              </div>
+              <div class="product-buy">
+                <div class="product-buy-amount">
+                  <input type="number" value="1" min="1" class="product-buy-input">
+                  <span>krążek</span>
+                </div>
+                <button class="product-buy-btn">Dodaj do koszyka <i class="fas fa-cart-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-header"><a href="#">Przewód YDYp 3x2,5 żo 450/750V /100m/</a></h3>
+            <div class="product-info">
+              <div class="product-img">
+                <img src="assets/images/przewód.jpeg" alt="produkt">
+              </div>
+              <div class="product-details">
+                <span class="product-detail">Producent: <p>DAMIR</p></span>
+                <span class="product-detail">Index producenta: <p>YDYp_3x2,5_750_100</p></span>
+                <span class="product-detail">Kategoria: <p>Wielożyłowe płaskie</p></span>
+                <span class="product-detail">Ocena: <p>4.1/5</p></span>
+                <button class="product-technical-btn">Dane techniczne</button>
+                <div class="product-technical-data">
+                  <span class="data"><p>Kolor izolacji</p> Biały</span>
+                  <span class="data"><p>Żyła ochronna</p> Tak</span>
+                  <span class="data"><p>Materiał powłoki zewnętrznej</p> PVC</span>
+                  <span class="data"><p>Bezhalogenowy EN 50267-2-2</p> Nie</span>
+                  <span class="data"><p>Nierozprzestrzeniający płomienia</p> Zgodnie z EN 60332-1-2</span>
+                  <span class="data"><p>Niska emisja dymów (zgodnie z EN 61034-2)</p> Nie</span>
+                  <span class="data"><p>Olejoodporne (zgodnie z EN 60811-2-1)</p> Nie</span>
+                  <span class="data"><p>Izolacja żyły</p> PVC</span>
+                  <span class="data"><p>Napięcie znamionowe U0 [V]</p> 450</span>
+                  <span class="data"><p>Napięcie znamionowe U [V]</p> 750</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] od</p> -40</span>
+                  <span class="data"><p>Dopuszczalna temperatura kabla dla połączeń ruchomych [°C] do</p> 70</span>
+                  <span class="data"><p>Przybliżona waga kabla [kg/km]</p> 140</span>
+                  <span class="data"><p>Ekran</p> Nie</span>
+                  <span class="data"><p>Szerokość przewodu ok.. [mm]</p> 6.7000</span>
+                  <span class="data"><p>Identyfikacja żył</p> Kolor</span>
+                  <span class="data"><p>Wysokość przewodu około [mm]</p>14.1000</span>
+                  <span class="data"><p>Liczba żył</p> 3</span>
+                  <span class="data"><p>Klasa żyły</p> Klasa 1 = jednodrutowy</span>
+                  <span class="data"><p>Znamionowy przekrój żyły [mm2]</p> 2.5000</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-order">
+              <div class="product-prince">
+                <span>Twoja cena:</span><p>200,00zł</p><span>brutto</span>
+              </div>
+              <div class="product-stats-info">
+                <div class="info-product-amount"><i class="fas fa-boxes"></i>40 krążków</div>
+                <div class="info-delivery-time"><i class="fas fa-truck-loading"></i>Wysyłka w 24h</div>
+              </div>
+              <div class="product-stats-tools">
+                <button class="tools-btn"><i class="fas fa-balance-scale-left"></i> Powrównaj</button>
+                <button class="tools-btn"><i class="fas fa-clipboard"></i> Dodaj do schowka</button>
+              </div>
+              <div class="product-buy">
+                <div class="product-buy-amount">
+                  <input type="number" value="1" min="1" class="product-buy-input">
+                  <span>krążek</span>
+                </div>
+                <button class="product-buy-btn">Dodaj do koszyka <i class="fas fa-cart-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="f-row f-menu">
+        <div class="colm sbtw">
+          <div class="f-col">
+            <h4>Przydatne linki</h4>
+            <ul class="f-list">
+              <li><a href="#">Regulamin</a></li>
+              <li><a href="#">Płatności</a></li>
+              <li><a href="#">Reklamacje i zwroty</a></li>
+              <li><a href="#">Polityka prywatności</a></li>
+              <li><a href="#">Polityka cookies</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4></h4>
+            <ul class="f-list">
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Shop.pl</h4>
+            <ul class="f-list">
+              <li><a href="#">O nas</a></li>
+              <li><a href="#">Dane firmy i numer konta</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Regulamin sklepu</a></li>
+              <li><a href="#">Strefa porad</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Informacje</h4>
+            <ul class="f-list">
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Logistyka</a></li>
+              <li><a href="#">Płatności</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="f-row f-logos">
+        <div class="colm sbtw f-logos-c">
+          <div class="logistics">
+            <h3>Logistyka</h3>
+            <div class="f-logos-box">
+              <img src="assets/images/img_dpd.png" alt="DPD">
+              <img src="assets/images/img_gls.png" alt="GLS">
+              <img src="assets/images/img_raben.png" alt="Raben">
+            </div>
+          </div>
+          <div class="payments">
+            <h3>Płatności</h3>
+            <div class="f-logos-box">
+              <img src="assets/images/img_blik.png" alt="Blik">
+              <img src="assets/images/img_mastercard.png" alt="MasterCard">
+              <img src="assets/images/img_przelewy24.png" alt="Przelewy24">
+              <img src="assets/images/img_visa.png" alt="Visa">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="f-row copyright">
+        Copyright &copy <a href="#">Shop.pl</a> | Wszelkie prawa zastrzeżone!
+      </div>
+    </footer>
+  </body>
+</html>
+

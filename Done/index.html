@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Store</title>
+    <link rel="stylesheet" href="assets/css/variables.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <!-- Glide.js CDN -->
+    <link rel="stylesheet" href="assets/css/glide.core.css"/> <!-- https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css -->
+    <link rel="stylesheet" href="assets/css/glide.theme.min.css"/> <!-- https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css -->
+    <script src="assets/javascript/glide.js" type="text/javascript"></script> <!-- https://cdn.jsdelivr.net/npm/@glidejs/glide -->
+    <script src="assets/javascript/script.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!--<div class="colm info">
+      <p>Ze względu na zbilżające się święta zamówienia przewidujemy opóźnienia w realizacji zamówień.</p>
+      <i class="info-close fas fa-times"></i>
+      <script src="assets/javascript/info.js" type="text/javascript"></script>
+    </div>-->
+    <header class="header">
+      <div class="h-container">
+        <div class="row align-items-center sbtw">
+          <button class="nav-btn" type="button">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="col h-logo">
+            <a href="/">
+              <img src="assets/images/logo.jpeg" alt="LOGO">
+            </a>
+          </div>
+          <div class="col h-content">
+            <div class="h-row">
+              <div class="h-quick-search">
+                <form action="" method="POST" name="quick_search" class="h-quick-search-box">
+                  <div class="search-container">
+                    <input type="text" name="search" class="form-control quick-search-autocomplete" value="" autocomplete="off" placeholder="Szukaj w ofercie 300 tysięcy produktów"/>
+                    <div class="h-quick-search-dropdown">
+                      <div class="md-top">
+                        <select class="dropdown-native-select form-control" name="elem_id">
+                          <option value="0" selected="selected">Wszystkie działy</option>
+                          <option value="1">Przewody</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary h-quick-search-submit"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="h-controls">
+                <div class="h-control-row">
+                  <a href="#" class="h-control h-clipboard-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-folder h-icon"></i><span>Schowek</span>
+                    </div>
+                  </a>
+                  <a href="#" class="h-control h-user-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-user h-icon"></i><span>Zaloguj się</span>
+                    </div>
+                  </a>
+                  <a href="#" class="h-control h-basket-control">
+                    <div class="h-control-btn">
+                      <i class="fas fa-shopping-cart h-icon"></i><span>0,00 zł</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <header class="nav-header">
+        <h3>MENU</h3>
+        <button class="nav-btn" type="button">
+          <span></span><span></span>
+        </button>
+      </header>
+      <div class="colm flex-start nav-content">
+        <ul class="nav-list">
+          <li class="nav-li-c-item">
+            <p class="nav-item">Katrgorie</p>
+            <div class="categoryies">
+              <div class="c-list-container">
+                <ul class="c-list">
+                  <li><a href="#" class="c">Aparatura elektryczna</a></li>
+                  <li><a href="#" class="c">Gniazda i łączniki</a></li>
+                  <li><a href="#" class="c">Źródła światła</a></li>
+                  <li><a href="#" class="c">Kable i przewody</a></li>
+                  <li><a href="#" class="c">Elementy prowadzenia kabli</a></li>
+                  <li><a href="#" class="c">Rozdzielnice i obudowy</a></li>
+                  <li><a href="#" class="c">Elektronarzędzia i mierniki</a></li>
+                  <li><a href="#" class="c">Dom i ogród</a></li>
+                  <li><a href="#" class="c">Artykuły biórowe</a></li>
+                  <li><a href="#" class="c">Oprawy oświetleniowe</a></li>
+                  <li><a href="#" class="c">Osprzęt łączeniowy</a></li>
+                  <li><a href="#" class="c">Odzież ochrona i BHP</a></li>
+                  <li><a href="#" class="c">Elektronika użytkowa</a></li>
+                  <li><a href="#" class="c">Wentylacja i ogrzewanie</a></li>
+                  <li><a href="#" class="c">Ochrona odgromowa</a></li>
+                  <li><a href="#" class="c">Domofony i dzwonki</a></li>
+                  <li><a href="#" class="c">Alarmy, domofony, komunikacja</a></li>
+                  <li><a href="#" class="c">Fotowoltaika</a></li>
+                  <li><a href="#" class="c">Pneumatyka</a></li>
+                  <li><a href="#" class="c">Oferty specjalne</a></li>
+                  <li><a href="#" class="c">Inne</a></li>
+                  <li><a href="#" class="c">Nowości</a></li>
+                  <li><a href="#" class="c">IT, GSM</a></li>
+                  <li><a href="#" class="c">Hobby, Zdrowie i Turystyka</a></li>
+                  <li><a href="#" class="c">RTV, AGD</a></li>
+                  <li><a href="#" class="c">Budowa i Remont</a></li>
+                  <li><a href="#" class="c">Pneumatyka</a></li>
+                </ul>
+              </div>
+              <div class="c-more">
+                Więcej
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="nav-item">Producenci</a></li>
+          <li><a href="#" class="nav-item">Promocje</a></li>
+          <li><a href="#" class="nav-item">Nowości</a></li>
+          <li><a href="#" class="nav-item">Outlet</a></li>
+          <li><a href="#" class="nav-item">Porady</a></li>
+          <li><a href="#" class="nav-item">Konfiguratory</a></li>
+          <li><a href="#" class="nav-item">Strefa porad</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="xyz margin-top75">
+      <div class="colm sbtw sc">
+        <div class="categoryies-shadow">
+        </div>
+        <div class="slider">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="assets/images/800x400_1.png" alt="slide0"></li>
+                <li class="glide__slide"><img src="assets/images/800x400_2.png" alt="slide1"></li>
+                <li class="glide__slide"><img src="assets/images/800x400_1.png" alt="slide2"></li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="colm sbtw m">
+      <section class="latest-products">
+        <header class="latest-products-header">Ostatnio oglądane</header>
+        <a href="#" class="latest-product">
+          <img src="https://images.morele.net/i256/7328089_3_i256.jpg" alt="product">
+        </a>
+        <a href="#" class="latest-product">
+          <img src="https://images.morele.net/i256/7328089_3_i256.jpg" alt="product">
+        </a>
+        <a href="#" class="latest-product">
+          <img src="https://images.morele.net/i256/7328089_3_i256.jpg" alt="product">
+        </a>
+        <a href="#" class="latest-product">
+          <img src="https://images.morele.net/i256/7328089_3_i256.jpg" alt="product">
+        </a>
+        <a href="#" class="latest-product">
+          <img src="https://images.morele.net/i256/7328089_3_i256.jpg" alt="product">
+        </a>
+      </section>
+      <section class="banners-container">
+        <a href="#" class="banner">
+          <img src="assets/images/560x240-sciany-i-podlogi.webp" alt="banner">
+        </a>
+        <a href="#" class="banner">
+          <img src="assets/images/560x240-wyposazenie-lazienki_1.webp" alt="banner">
+        </a>
+        <a href="#" class="banner">
+          <img src="assets/images/560x240-kuchnie_2.webp" alt="banner">
+        </a>
+        <a href="#" class="banner">
+          <img src="assets/images/560x240-atomia_6.webp" alt="banner">
+        </a>
+        <a href="#" class="banner">
+          <img src="assets/images/560x240-sciany-i-podlogi.webp" alt="banner">
+        </a>
+        <a href="#" class="banner">
+          <img src="assets/images/560x240-wyposazenie-lazienki_1.webp" alt="banner">
+        </a>
+      </section>
+      <section class="featured-products">
+        <div class="featured-products-c">
+          <h3>Polecane prodkty</h3>
+          <div class="fpc">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide f-product">
+                  <a href="#" class="fpa">
+                    <img src="assets/images/Puszka-ogniotrwala.jpeg" alt="Produkt">
+                  </a>
+                  <a href="#">Puszka ogniotrwala</a>
+                  <span>115,00 zł <p>brutto</p></span>
+                  <span><i class="fas fa-boxes"></i> 125 szt.</span>
+                  <span><i class="fas fa-truck"></i> Wysyłamy w 24h</span>
+                  <a href="#" class="fpb">Do koszyka <i class="fas fa-cart-arrow-down"></i></a>
+                </li>
+                <li class="glide__slide f-product">
+                  <a href="#" class="fpa">
+                    <img src="assets/images/Puszka-ogniotrwala.jpeg" alt="Produkt">
+                  </a>
+                  <a href="#">Puszka ogniotrwala</a>
+                  <span>115,00 zł <p>brutto</p></span>
+                  <span><i class="fas fa-boxes"></i> 125 szt.</span>
+                  <span><i class="fas fa-truck"></i> Wysyłamy w 24h</span>
+                  <a href="#" class="fpb">Do koszyka <i class="fas fa-cart-arrow-down"></i></a>
+                </li>
+                <li class="glide__slide f-product">
+                  <a href="#" class="fpa">
+                    <img src="assets/images/Puszka-ogniotrwala.jpeg" alt="Produkt">
+                  </a>
+                  <a href="#">Puszka ogniotrwala</a>
+                  <span>115,00 zł <p>brutto</p></span>
+                  <span><i class="fas fa-boxes"></i> 125 szt.</span>
+                  <span><i class="fas fa-truck"></i> Wysyłamy w 24h</span>
+                  <a href="#" class="fpb">Do koszyka <i class="fas fa-cart-arrow-down"></i></a>
+                </li>
+                <li class="glide__slide f-product">
+                  <a href="#" class="fpa">
+                    <img src="assets/images/Puszka-ogniotrwala.jpeg" alt="Produkt">
+                  </a>
+                  <a href="#">Puszka ogniotrwala</a>
+                  <span>115,00 zł <p>brutto</p></span>
+                  <span><i class="fas fa-boxes"></i> 125 szt.</span>
+                  <span><i class="fas fa-truck"></i> Wysyłamy w 24h</span>
+                  <a href="#" class="fpb">Do koszyka <i class="fas fa-cart-arrow-down"></i></a>
+                </li>
+                <li class="glide__slide f-product">
+                  <a href="#" class="fpa">
+                    <img src="assets/images/Puszka-ogniotrwala.jpeg" alt="Produkt">
+                  </a>
+                  <a href="#">Puszka ogniotrwala</a>
+                  <span>115,00 zł <p>brutto</p></span>
+                  <span><i class="fas fa-boxes"></i> 125 szt.</span>
+                  <span><i class="fas fa-truck"></i> Wysyłamy w 24h</span>
+                  <a href="#" class="fpb">Do koszyka <i class="fas fa-cart-arrow-down"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="promotion">
+          <h3>Hit dnia</h3>
+          <div class="promo-conent">
+            <a href="#"><img src="assets/images/SOFAR-INWERTER-6.6-KTL-X1.jpeg" alt="Promocja dnia"></a>
+            <div class="prince-bar">
+              <p>10440,00zł</p><span>10250,00zł</span>
+            </div>
+            <div class="promo-p-name">SOFAR INWERTER</div>
+            <div class="amount">
+              <div class="amount-bar">
+                <p>Pozostało 5 z 55</p>
+              </div>
+            </div>
+            <div class="promo-actions">
+              <div class="promo-code">
+                <div class="promo-code-value">
+                  Awesome
+                </div>
+                <div class="promo-code-btn">Skopiuj kod</div>
+              </div>
+              <a href="#" class="promo-btn">Dodaj do koszyka</a>
+            </div>
+            <div class="promo-timer" data-date-to="2021-08-25 14:59:59">
+              <div class="pt-column">
+                <div class="ptc-value p-h">00</div>
+                <div class="ptc-label">GODZIN</div>
+              </div>
+              <div class="ptc-separator">:</div>
+              <div class="pt-column">
+                <div class="ptc-value p-min">00</div>
+                <div class="ptc-label">MINUT</div>
+              </div>
+              <div class="ptc-separator">:</div>
+              <div class="pt-column">
+                <div class="ptc-value p-sec">00</div>
+                <div class="ptc-label">SEKUND</div>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript" src="assets/javascript/promotion.js"></script>
+        </div>
+      </section>
+      <section class="featured-categoryies">
+        <h3 class="h3">Polecane katrgorie</h3>
+        <div class="fc-container">
+          <a href="#" class="featured-category">
+            <img src="assets/images/Elektronarzedzia_przenosne_i_akcesoria_528843_0.webp" alt="category">
+            <span>Elektronarzedzia przenośne i akcesoria</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/Meble_kuchenne_GoodHome_656985_0.webp" alt="category">
+            <span>Meble kuchenne</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/Meble_lazienkowe_658891_0.webp" alt="category">
+            <span>Meble łazienkowe</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/Modulowe_scianki_dzialowe_Alara_608002_0.webp" alt="category">
+            <span>Modulowe ścianki działowe</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/Modulowy_system_zabudowy_Atomia_656986_0.webp" alt="category">
+            <span>Modułowy system zabudowy</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/Panele_scienne_tapicerowane_533114_0.webp" alt="category">
+            <span>Panele ścienne tapicerowane</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/Plytki_podlogowe_537842_0.webp" alt="category">
+            <span>Płytki podłogowe</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/Plytki_scienne_660412_0.webp" alt="category">
+            <span>Płytki ścienne</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/ico5_27_29.webp" alt="category">
+            <span>Ogród</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/ico5_27_159.webp" alt="category">
+            <span>Meble pokojowe</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/ico5_27_171.webp" alt="category">
+            <span>Ścianki modulowe</span>
+          </a>
+          <a href="#" class="featured-category">
+            <img src="assets/images/ico5_27_207.webp" alt="category">
+            <span>Meble do sypialni</span>
+          </a>
+        </div>
+      </section>
+      <section class="sample-guides">
+        <header class="guides-header">
+          <h3><a href="#">Strefa porad</a></h3>
+          <a href="#"><span>Zobacz więcej</span> <i class="fas fa-chevron-right"></i></a>
+        </header>
+        <div class="guides-container">
+          <div class="glide2">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <a href="#" class="guide">
+                    <div class="gimgc">
+                      <img src="assets/images/53_26_04_2021_2.jpeg" alt="guide">
+                    </div>
+                    <div class="gdesc">
+                      <h4>Produkty Eaton</h4>
+                      <span class="date">05.08</span>
+                      <span class="description">Bezpieczeństwo, ernognomia i sprawdzone działanie są w przemyśle szczególnie waż...</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="glide__slide">
+                  <a href="#" class="guide">
+                    <div class="gimgc">
+                      <img src="assets/images/53_26_04_2021_2.jpeg" alt="guide">
+                    </div>
+                    <div class="gdesc">
+                      <h4>Produkty Eaton</h4>
+                      <span class="date">05.08</span>
+                      <span class="description">Bezpieczeństwo, ernognomia i sprawdzone działanie są w przemyśle szczególnie waż...</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="glide__slide">
+                  <a href="#" class="guide">
+                    <div class="gimgc">
+                      <img src="assets/images/53_26_04_2021_2.jpeg" alt="guide">
+                    </div>
+                    <div class="gdesc">
+                      <h4>Produkty Eaton</h4>
+                      <span class="date">05.08</span>
+                      <span class="description">Bezpieczeństwo, ernognomia i sprawdzone działanie są w przemyśle szczególnie waż...</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="f-row f-menu">
+        <div class="colm sbtw">
+          <div class="f-col">
+            <h4>Przydatne linki</h4>
+            <ul class="f-list">
+              <li><a href="#">Regulamin</a></li>
+              <li><a href="#">Płatności</a></li>
+              <li><a href="#">Reklamacje i zwroty</a></li>
+              <li><a href="#">Polityka prywatności</a></li>
+              <li><a href="#">Polityka cookies</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4></h4>
+            <ul class="f-list">
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Shop.pl</h4>
+            <ul class="f-list">
+              <li><a href="#">O nas</a></li>
+              <li><a href="#">Dane firmy i numer konta</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Regulamin sklepu</a></li>
+              <li><a href="#">Strefa porad</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Informacje</h4>
+            <ul class="f-list">
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Logistyka</a></li>
+              <li><a href="#">Płatności</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="f-row f-logos">
+        <div class="colm sbtw f-logos-c">
+          <div class="logistics">
+            <h3>Logistyka</h3>
+            <div class="f-logos-box">
+              <img src="assets/images/img_dpd.png" alt="DPD">
+              <img src="assets/images/img_gls.png" alt="GLS">
+              <img src="assets/images/img_raben.png" alt="Raben">
+            </div>
+          </div>
+          <div class="payments">
+            <h3>Płatności</h3>
+            <div class="f-logos-box">
+              <img src="assets/images/img_blik.png" alt="Blik">
+              <img src="assets/images/img_mastercard.png" alt="MasterCard">
+              <img src="assets/images/img_przelewy24.png" alt="Przelewy24">
+              <img src="assets/images/img_visa.png" alt="Visa">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="f-row copyright">
+        Copyright &copy <a href="#">Shop.pl</a> | Wszelkie prawa zastrzeżone!
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+:root {
+	--primaryColor: blue;
+	--secondColor: lightblue;
+	--background: #efefef;
+	--fontFamily: sans-serif;
+	--fontSize: 1em;
+	--fontWeight: 500;
+	--fontColor: #000;
+	--toolBarColor: yellow;
+	--toolBarWidth: 10;
+	--toolBarHeight: 5;
+	--toolBarLeft: 0;
+	--toolBarRight: auto;
+	--toolBarVerticalAxis: 75;
+	--toolBarPrimaryColor: green;
+	--toolBarSecondColor: gray;
+	--panelPrimaryColor: #111;
+	--panelSecondColor: #1f1f1f;
+	--panelBackground: #2d2d2d;
+}
